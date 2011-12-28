@@ -1,0 +1,645 @@
+BODY {BACKGROUND-COLOR: #ffffff;COLOR: #000000;}
+
+/* ---- STYLES USED IN WORMHOLE START  ---- */
+
+.subnavoff {
+	color:#1f77b4;
+}
+
+.buttontd {
+ 	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	cursor: pointer;
+	text-align: center;
+	font-size: .8em;
+	padding: .25em .75em .25em .75em;
+	text-shadow: none;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .25em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	width: auto;
+	overflow: visible;
+	text-decoration: none;
+	border-style: solid;
+	border-color: #195ca0;
+	border-width: 1px;
+	background: #c2d4e6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c2d4e6), to(#ffffff));
+	background: -moz-linear-gradient(top,  #c2d4e6,  #ffffff);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2d4e6', endColorstr='#ffffff');
+}
+
+.outercontenttable {
+	background-color:#efefef;
+	padding-bottom:15px;
+	border: 1px solid #a2a8b4;
+	border-top:0px;
+}
+
+.tablehead {
+	padding:5px;
+	background-color:#918c78;
+	border-bottom:0px solid #ffffff;
+	font-weight:bold;
+	color:#fff;
+	text-shadow: 1px 1px 2px #000;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-size:90%;
+	}
+	
+.tableheadtabON {
+	background-color:#918c78;
+	font-weight:bold;
+	color:#ffffff;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	}
+	
+.toolbar {
+	background-image: url(images/toolbar666666.gif);
+	background-color:#f5f5f5;
+	border-left: 1px solid #a2a8b4;
+	border-right: 1px solid #a2a8b4;
+	border-bottom:1px solid #cccccc;
+	}
+	
+.tableheadtabOFF {
+	}
+
+	a.contentNavigation, a.contentNavigation:link, a.contentNavigation:visited {
+	display: block;
+	margin: 5 5 0 0px;
+	padding: 2 6px;
+	background: #C6C6C6;
+	background-image: url(images/contentnav.gif);
+	background-repeat: x-repeat;
+	background-position: bottom;
+	border-left: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #A8A8A8;
+	border-bottom: 1px solid #A8A8A8;
+	text-decoration: none;
+	text-align: center;
+	FONT-SIZE: larger;
+	color: #000;
+	}
+
+a.contentNavigation, a.test:link, a.test:visited {
+	float:left;
+	}
+
+a.contentNavigation:hover, a.contentNavigationON:hover {
+	background:#fff; 
+	color:#000; 
+	text-decoration: none;
+	}
+
+a.contentNavigationON, a.contentNavigationON:link, a.contentNavigationON:visited {
+	display:block; 
+	margin:5 5 0 0px;
+	padding: 2 6px;
+	background:#fff; 
+	border-left:1px solid #CCC; 
+	border-top:1px solid #CCC;
+	border-right:1px solid #A8A8A8; 
+	border-bottom:1px solid #A8A8A8;
+	text-decoration:none; 
+	text-align:center;	
+	FONT-SIZE: larger; 
+	color:#000; 
+	}
+	
+a.contentNavigationON, a.contentNavigationON:link, a.contentNavigationON:visited {
+	float:left;
+	}
+	
+/* ---- STYLES USED IN WORMHOLE END  ---- */
+
+
+/* ---- PRELOAD FOR NAVIGATION ROLLOVERS  ---- */
+ .preloadedImages {
+       width: 0px;
+       height: 0px;
+       display: inline;
+       background-image: url(images/coursetool_ON.gif);
+}
+
+/* -- START CONTENT STUFF -- */
+ 
+.pageTitle {
+	padding:2px;
+	padding-left:0px;
+	border-bottom:1px solid #D3D3D3;
+	FONT-SIZE: larger;
+	font-weight:bold;
+	COLOR: #000;
+	}
+	
+/* -- END CONTENT STUFF -- */
+
+
+
+/* -- START TOP FRAME  -- */
+
+
+/* -- COURSE TOOL LINKS -- */
+.navbar {
+	position:absolute; 
+	top:38; 
+	right: 5;
+	z-index:5; 
+	}
+a.nav, a.nav:link, a.nav:visited {
+	display:block; 	
+	background-color: #C9C9C9;
+	background-image:url(images/coursetool_OFF.gif);
+    background-repeat : repeat-x;	 
+	border:1px solid #000; border-left:0px;
+	text-align:center; 
+	text-decoration:none!important;
+	color:#000; 
+	overflow:hidden; 
+	float:left;	
+	padding : 2 3 2 3px;
+	}
+
+	
+a.nav:hover {
+	background-color: #F1F1F1;
+	background-image:url(images/coursetool_ON.gif);
+   background-repeat : repeat-x;
+	color:#000; 
+	}
+
+	
+a.navON {
+	display:block; 	
+	background-color: #F1F1F1;	
+	background-image:url(images/coursetool_ON.gif);
+    background-repeat : repeat-x;
+    background-repeat : repeat-x;
+	border:1px solid #000; border-left:0px; 
+	text-align:center; 
+	text-decoration:none!important;
+	color:#000; 
+	overflow:hidden; 
+	float:left;	
+	padding : 2 3 2 3px;
+	}
+	
+	
+/* -- COURSE TOOL ELEMENTS -- */
+
+.courseTools {
+	display:block; 
+	float:left;
+	margin:0 0 0 0px;
+	padding : 2 3 3 3px;
+	font-size:smaller;
+	background-image:url(images/coursetool_HEADER.gif);
+   background-repeat : repeat-x;	 
+	border:1px solid #000; 
+	border-left:0px;
+	text-align:center; 
+	text-decoration:none; 
+	color:#fff; 
+	overflow:hidden; 
+	}
+	
+.courseToolsLeftEnd { 	
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding : 2 2 17 2px;
+	background-image:url(images/CourseToolCap_left.gif);
+	background-repeat : no-repeat;	
+	}
+	
+.courseToolsRightEnd {
+	display:inline;
+	position:relative; 	
+	float:left;
+	margin:0 3 0 0px;
+	padding : 2 2 17 2px;
+	background-image:url(images/CourseToolCap_right2.gif);
+	background-repeat: no-repeat;
+	background-position:top left;
+	}
+
+	
+	
+/* -- COURSE TITLE -- */
+
+.courseTitle {
+	margin:1 3 0 2px;
+	text-align:right;
+	FONT-SIZE: medium;	
+	FONT-WEIGHT: bold; 
+	COLOR: #2e373c;
+	}
+
+	
+/* -- INSTRUCTOR TITLE -- */
+	
+.profName { 
+	margin:0 4 1 2px;
+	text-align:right;
+	FONT-WEIGHT: bold;
+	COLOR: #364854; 
+	}	
+	
+
+/* -- FRAME ELEMENTS, ie: LOGO, BACKGROUND TILE, ALIGNMENT -- */
+
+.topbody {
+	position: relative;
+	z-index: 0;
+	margin: 0 0 0 0px;
+	background-image: url(images/background_pattern.gif);
+	background-repeat: x-repeat;
+	background-position: top left;
+	background-color: #336699;
+	}
+.wrapper {
+	display:inline;
+	float:right;
+	position:relative;
+	z-index:4;
+	padding: 0 5 0 5;
+	}
+	
+.wrapper2 {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	background-image: url(images/wrapper2.gif);
+	background-position:top left;
+	}
+
+a.helpbutton, a.helpbutton:link, a.helpbutton:visited {
+	float:left;
+	margin:0 0 0 0px; 
+	padding : 2 1 2 3px;	
+	background-color:#4573A2;
+	border:1px solid #000; 
+	border-left:0px; 
+	border-right:0px;
+	color:#FFF;
+	}
+
+a.helpbutton:hover {
+	background-color:#4573A2;
+	text-decoration: underline;
+	color:#FFD24F;
+	}
+
+/* -- END TOP STUFF -- */
+
+
+
+
+
+
+/* -- START TREE STUFF -- */
+
+/* -- TREE ELEMENTS -- */
+
+.treebody {
+	margin:0px;
+	background-color: #29568F;
+	background-repeat: no-repeat;
+	border-right: 1px solid #000;
+	padding:3px;
+	}
+
+.treetabs {
+	display:inline;
+	float:left;
+	padding:0px;
+	width:154px !important;
+   width:151px;
+	background-color:#23427B;
+	text-align:left;
+	}
+
+.tree {
+	float:left;
+	position:relative;
+	top:-1px;
+	z-index:0;
+   padding:5 0 3 0px;
+   width:152px !important;
+   width:151px;
+   height:84%!important;
+	height:88%;
+   background-color:#4573A2;
+   border:1px solid #000;
+	overflow: auto;
+	}
+
+
+	
+.Authortree {
+	float:left;
+	position:relative;
+	top:-1px;
+	z-index:0;
+   padding:5 0 3 0px;
+   width:152px !important;
+   width:151px;
+   height:84%!important;
+	height:88%;
+	background-color:#d4d4d4;
+   border:1px solid #000;
+   overflow: auto;
+   }
+	
+
+/* -- COURSE AND AUTHOR TABS -- */
+
+a.CourseON, a.CourseON:link, a.CourseON:visited {
+	display:inline;
+	float:left;
+	position:relative;
+	z-index:2; 
+	padding:2 0 3 0px !important;
+	padding:2 0 3 0pxpx;
+	width:75px !important;
+	width:75px;
+	background-color:#4573A2;
+	border:1px solid #000; 
+	border-bottom:0px solid #4573A2;
+	text-align:center;
+	text-decoration:none;
+	font-weight: bold;
+	color:#fff;
+	}
+	
+a.CourseON:hover {
+	text-decoration:none;
+	}	
+	
+	
+a.CourseOFF, a.CourseOFF:link, a.CourseOFF:visited {
+	display:inline;
+	float:left;
+	position:relative;
+	z-index:1;
+	padding:2 0 2 0px !important;
+	padding:2px;
+	width:75px !important;
+	width:76px;
+	background-color:#56799F;
+	border:1px solid #000; 
+	border-bottom:1px solid #000;
+	text-align:center;
+	text-decoration:none;
+	font-weight: bold;
+	color:#FFF;
+	}
+	
+a.CourseOFF:hover {
+	background-color:#85A2C2;
+	text-decoration:none;
+	color:#000;
+	}
+	
+	
+	
+	
+a.AuthorON, a.AuthorON:link, a.AuthorON:visited {
+	display:inline;
+	float:left;
+	position:relative;
+	z-index:2;
+	padding:2 0 3 0px !important;
+	padding:2 0 3 0pxpx;
+	width:75px !important;
+	width:75px;
+	background-color:#d4d4d4;
+	border:1px solid #000; 
+	border-bottom:0px solid #d4d4d4;
+	text-align:center;
+	text-decoration:none;
+	font-weight: bold;
+	color:#000;
+	}
+	
+a.AuthorON:hover {
+	text-decoration:none;
+	}	
+	
+	
+a.AuthorOFF, a.AuthorOFF:link, a.AuthorOFF:visited {
+	display:inline;
+	float:left;
+	position:relative;
+	z-index:1;
+	padding:2 0 2 0px !important;
+	padding:2px;
+	width:75px !important;
+	width:76px;
+	background-color:#E6E6E6;
+	border:1px solid #000; 
+	border-bottom:1px solid #000;
+	text-align:center;
+	text-decoration:none;
+	font-weight: bold;
+	color:#000;
+	}
+	
+a.AuthorOFF:hover {
+	background-color:#fff;
+	}
+
+
+	
+/* -- UNITS -- */
+	
+a.unit, a.unit:link, a.unit:visited {
+	display:block;
+	margin-top:3px; 
+	padding:2 3 2 4px; 
+	background:#d4d4d4; 
+	background-image: url(images/contentnav.gif);
+	background-repeat: x-repeat;
+	background-position: bottom;
+	border-bottom:1px solid #000; 
+	border-top:1px solid #d4d4d4;
+	text-decoration:none; 
+	font-weight: bold;
+	color:#000;  
+	overflow:hidden;
+	}
+	
+a.unit:hover {
+	background:#fff;
+	border-bottom:1px solid #000; 
+	border-top:1px solid #fff; 
+	text-decoration:none;
+	color:#000;
+	}
+	
+a.unitON {
+	display:block;
+	margin-top:3px; 
+	padding:2 3 2 4px; 
+	background:#fff; 
+	border-bottom:1px solid #000; 
+	border-top:1px solid #fff; 
+	text-decoration:none!important;
+	font-weight: bold;
+	color:#000;  
+	}
+	
+	
+a.Authorunit, a.Authorunit:link, a.Authorunit:visited {
+	display:block; 
+	margin-top:3px; 
+	padding:2 3 2 4px;
+	background:#d4d4d4; 
+	background-image: url(images/contentnav.gif);
+	background-repeat: x-repeat;
+	background-position: bottom;
+	border-bottom:1px solid #000; 
+	border-top:1px solid #d4d4d4;
+	text-decoration:none; 
+	font-weight: bold;
+	color:#000;  
+	overflow:hidden;
+	}
+	
+a.Authorunit:hover {
+	background:#fff;
+	border-bottom:1px solid #000; 
+	border-top:1px solid #fff; 
+	text-decoration:none;
+	color:#000;
+	}
+	
+a.AuthorunitON {
+	display:block; 
+	margin-top:3px; 
+	padding:2 3 2 4px;
+	background:#fff; 
+	border-bottom:1px solid #000; 
+	border-top:1px solid #fff; 
+	text-decoration:none!important;
+	font-weight: bold;
+	color:#000;  
+	}
+	
+	
+/* -- CONTENT ITEMS -- */
+
+.content {
+	}
+
+a.contentitem, a.contentitem:link, a.contentitem:visited {
+	display:block;  
+	margin:4 2 4 2px; 
+	padding: 0 3 0 4px;
+	text-decoration:none; 
+	color:#fff; 
+	overflow:hidden;
+	}
+	
+a.contentitem:hover {
+	text-decoration:underline;
+	}
+	
+a.contentitemON {
+	display:block;  
+	margin:4 2 4 2px;
+	padding: 0 3 0 4px;  
+	text-decoration:underline; 
+	color:#fff; 
+	overflow:hidden;
+	}	
+	
+a.collapse, a.collapse:link {
+	display:block;  
+	margin:5 0 0 2px; 
+	background:url(images/collapsetree.gif) no-repeat;
+	text-decoration:none;
+	font-size: 90%; 
+	color:#666; 
+	overflow:hidden;
+	}	
+	
+a.collapse:hover {
+	text-decoration:none;
+	}
+	
+.Authorcontent {
+	}
+
+a.Authorcontentitem, a.Authorcontentitem:link, a.Authorcontentitem:visited {
+	display:block;  
+	margin:4 2 4 2px; 
+	padding: 0 3 0 4px;
+	text-decoration:none; 
+	color:#000; 
+	overflow:hidden;
+	}
+	
+a.Authorcontentitem:hover {
+	text-decoration:underline;
+	}
+	
+a.AuthorcontentitemON {
+	display:block;  
+	margin:4 2 4 2px;  
+	text-decoration:underline; 
+	color:#000; 
+	overflow:hidden;
+	}	
+	
+a.Authorcollapse, a.Authorcollapse:link {
+	display:block;  
+	margin:5 0 0 2px;
+	background:url(images/collapsetree_author.gif) no-repeat; 
+	text-decoration:none; 
+	font-size: 90%;
+	color:#666;
+	overflow:hidden;
+	}
+	
+a.Authorcollapse:hover {
+	text-decoration:none;
+	}
+	
+	
+/* -- LOGOUT, EXIT COURSE, and COPYRIGHT ELEMENTS  -- */
+
+.copyright {
+    margin: 0 2 2 2px;
+    padding:2px;
+    font-size: xx-small;
+	 text-decoration: none;   
+	 color: #ffffff;
+    }
+  
+.exitwrapper {
+    margin: 2 0 2 4px;
+    }
+	
+a.HideLogoutExitbutton, a.HideLogoutExitbutton:link, a.HideLogoutExitbutton:visited {
+	position:relative;
+	top:1px !important;
+	top:2px;
+   }

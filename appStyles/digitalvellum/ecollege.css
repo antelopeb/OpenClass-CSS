@@ -1,0 +1,1325 @@
+/* element overrides */
+
+ul#mybar {
+    display: none;
+}
+
+
+/* Base Styles */
+
+body {
+    font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #EFEBDE;
+    min-width: 1024px;
+    margin-top: 50px !important;
+    width: auto;
+    padding: 0 20px 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 160%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h3 {
+    font-size: 105%;
+}
+
+h4,p {
+    font-size: 90%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 1.4em;
+}
+
+strong, 
+b {
+    font-weight: bold;
+}
+
+em, 
+i {
+    font-style: italic;
+}
+
+a, 
+a:link {
+    text-decoration: none;
+    color: #0382E5;
+}
+
+.clearoutfloats {
+     clear: both;
+     height: 1px;
+}
+
+
+
+
+
+/* Header */
+
+#header {
+    /*background: url(images/background_header.png) repeat;*/
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 0;
+    border: 1px solid #ddd;
+    height: 40px;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+#header h1.coursetitle {
+    color: #666;
+    float: left;
+    margin: 10px 0 0 12px;
+    white-space: nowrap;
+    font-size: 120%;
+    padding-top: 0;
+}
+
+#courseSettingsMenu {
+    /*background: url(images/background_header-settings.png) no-repeat 0 0*/
+    background: url(images/gearCourseSettingsMenu.png) no-repeat 7px 10px #fff;
+    border-left: 1px solid #ddd;
+    float: right;
+    height: 40px;
+    width: 33px;
+    overflow: hidden;
+}
+
+#courseSettingsMenu .dijitButtonNode {
+    padding: 0;
+}
+
+#courseSettingsMenu .dijitToggleButton, 
+#courseSettingsMenu .dijitButton, 
+#courseSettingsMenu .dijitDropDownButton, 
+#courseSettingsMenu .dijitComboButton {
+    margin: 0;
+    height: 40px;
+    width: 33px;
+}
+
+#courseSettings {
+    height: 40px;
+    width: 33px;
+}
+
+.ecollege #header .dijitDropDownButton .dijitButtonNode .dijitButtonText {
+    visibility: hidden;
+}
+
+.ecollege #header .dijitDropDownButton .dijitButtonNode {
+     background: none repeat scroll 0% 0% transparent;
+     border: medium none;
+     font-size: 75%;
+     margin-left: 0;
+     padding: 0;
+     text-decoration: none;
+}
+
+div#header div#courseSettingsMenu .dijitArrowButtonInner {
+     background: none repeat scroll 0% 0% transparent;
+}
+
+.ecollege #header .dijitDropDownButton .dijitButtonNode .dijitButtonText {
+     background: none;
+     color: #CCCCCC;
+     padding: 0;
+}
+
+.ecollege #header .dijitDropDownButtonHover .dijitButtonNode .dijitButtonText {
+     background: none;
+     color: #FFFFFF;
+}
+
+.ecollege #header .dijitDropDownButtonOpened .dijitButtonNode {
+     background-color: rgba(255, 255, 255, 0.7);
+}
+
+.ecollege #header .dijitDropDownButtonOpened .dijitButtonNode .dijitButtonText {
+     background: none;
+     color: #333333;
+}
+
+.ecollege .dijitPopup table {
+     border: medium none;
+}
+
+.ecollege .dijitPopup, .ecollege .dijitMenuPopup {
+     border: 1px solid #BACCE0;
+     box-shadow: 1px 1px 3px #000000;
+}
+
+.ecollege .dijitMenuPopup {
+     margin-left: 8px;
+}
+
+.ecollege .dijitMenuPopup .dijitMenuTable td {
+     border-bottom: 1px solid #CCCCCC;
+     font-size: 75%;
+     padding: 3px 0pt;
+}
+
+
+
+
+
+
+
+
+/* Two Column Container */
+
+#twocolumncontainer {
+    clear: both;
+    min-width: 800px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* Nav Container */
+
+#navcontainer {
+     background-color: #F5F5F5;
+     border-radius: 5px 5px 5px 5px;
+     -moz-border-radius: 5px 5px 5px 5px;
+     -webkit-border-radius: 5px 5px 5px 5px;
+     border: none;
+     float: left;
+     margin-left: 0;
+     overflow: visible;
+     width: 200px;
+}
+
+#navcontainer .moduletitlebar {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 25px;
+    background-color: #fff;
+    padding-top: 0;
+    border: 1px solid #aaa;
+    width: auto;
+}
+
+#navcontainer .modifymenu {
+    margin-top: 0;
+    text-align: right;
+}
+
+#navcontainer .modifymenu a,
+#navcontainer .modifymenu a:link, 
+#navcontainer .modifymenu a:hover,
+#navcontainer .modifymenu a:visited {
+    color: #666;
+    background: url(images/gear_light_author-options.png) no-repeat right center;
+    padding-right: 20px;
+    margin-right: 5px;
+    font-size: 80%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navcontainer div.module {
+    font-size: 90%;
+    border: 1px solid #A2A8B3;
+    width: auto;
+    background-color: #FFFFFF;
+}
+
+#navcontainer div.module ul#mainMenu {
+    background-color: #EFEFEF;
+}
+
+div.module li.closed > a span.expander {
+     background: url(images/collapsed.png) no-repeat scroll left center transparent;
+     cursor: pointer;
+}
+
+div.module li.open > a span.expander {
+     background: url(images/expanded.png) no-repeat scroll left center transparent;
+     cursor: pointer;
+}
+
+#navcontainer div.module ul.mainMenu li.onlist a.on, 
+#navcontainer div.module ul.mainMenu li a:hover {
+     background-color: #BFD8EC;
+     color: #525252;
+     font-weight: bold;
+     text-shadow: none;
+}
+
+#navcontainer div.module ul.mainMenu li a {
+     border-bottom: 0;
+     border-top: 1px solid #A2A8B3;
+     color: #525252;
+     display: block;
+     padding: 6px;
+     text-decoration: none;
+}
+
+#navcontainer div.module ul.mainMenu li.level1 a,
+#navcontainer div.module ul.mainMenu li.level1 a.on,
+#navcontainer div.module ul.mainMenu li.level1 a:hover {
+     border-bottom: 0;
+     border-top: 0;
+     background-color: #FFFFFF;
+     font-size: 110%;
+}
+
+#navcontainer div.module ul.mainMenu li.level1 a:hover {
+    color: #0382E5;
+}
+
+#navcontainer div.module ul.mainMenu li.level1 a.on {
+    font-weight: bold;
+    color: #0382E5;
+}
+
+#navcontainer div.module ul.mainMenu li.level2 a,
+#navcontainer div.module ul.mainMenu li.level2 a.on,
+#navcontainer div.module ul.mainMenu li.level2 a:hover {
+     font-size: 120%;
+}
+
+#navcontainer div.module ul.mainMenu li.level0.first a {
+     border-top: 0;
+}
+
+#navcontainer div.module ul.mainMenu li.onlist li a {
+     background-color: #FFFFFF;
+}
+
+#navcontainer div.module ul.mainMenu li.hidden a {
+     background-image: url(images/hiddenFromStudents.png);
+     background-position: 169px center;
+     background-repeat: no-repeat;
+}
+
+#navcontainer div.module ul.mainMenu li.level1 ul.mainMenu li.level2 a:hover {
+     background-color: #FFFFFF;
+     color: #0382E5;
+     font-size: 120%;
+     text-shadow: none;
+}
+
+#navcontainer div.module ul.mainMenu li.level1 ul.mainMenu li.level2 a.on {
+     font-weight: bold;
+     background-color: #FFFFFF;
+     color: #0382E5;
+}
+
+#navcontainer div.module li.level0 li .label {
+     font-weight: normal;
+     margin-left: 20px;
+}
+
+#navcontainer div.module li.level1 li .label {
+     font-weight: normal;
+     margin-left: 30px;
+}
+
+#navcontainer div.module li.level1 a.on span.label {
+    font-weight: bold;
+}
+
+#navcontainer div.module li.level1 .expander {
+     margin-left: 0;
+}
+
+#navcontainer div.module li.level2 .expander {
+     margin-left: 8px;
+}
+
+#navcontainer div.module li.level3 .expander {
+     margin-left: 16px;
+}
+
+#navcontainer div.module li.level4 .expander {
+     margin-left: 24px;
+}
+
+#navcontainer div.module li.level5 .expander {
+     margin-left: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Content Container */
+
+div.content-container {
+     float: left;
+     margin-left: 20px;
+     padding-right: 0;
+}
+
+div.content-container-full-screen {
+     background-color: White;
+     height: 100%;
+     left: 0pt;
+     position: absolute;
+     top: 0pt;
+     width: 100%;
+     z-index: 25;
+}
+
+#contentcontainer .moduletitlebar {
+    background: none;
+    border-bottom: 1px solid #525252;
+    height: 28px;
+    margin-bottom: 0;
+}
+
+.moduletitlebar h2 {
+     cursor: pointer;
+     float: left;
+     font-size: 130%;
+     font-weight: bold;
+     margin: 0pt;
+     color: #525252;
+}
+
+.moduletitlebar div.enable-full-screen-mode, .moduletitlebar div.disable-full-screen-mode {
+     background: url(images/fullScreenIcon.png) no-repeat scroll -3px 0 transparent;
+     cursor: pointer;
+     float: left;
+     height: 24px;
+     margin: 0 3px 0 0;
+     width: 24px;
+}
+
+.moduletitlebar div.enable-full-screen-mode:hover {
+     background-position: -27px 0;
+}
+
+.moduletitlebar div.disable-full-screen-mode {
+     background-position: -49px 0;
+}
+
+.moduletitlebar div.disable-full-screen-mode:hover {
+     background-position: -73px 0;
+}
+
+#contentcontainer #optionsMenu {
+    float: right;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #fff;
+    text-align: right;
+    height: 20px;
+    border: 1px solid #aaa;
+    padding: 4px 8px 0 8px;;
+}
+
+.ecollege #optionsMenu .dijitInline, 
+.ecollege #optionsMenu #optionsDropDown_label .dijitInline, 
+.ecollege #optionsMenu #optionsDropDown_label .dijitButtonText {
+     margin: 0;
+     padding-top: 0;
+}
+
+.ecollege #optionsMenu .dijitDropDownButton .dijitButtonNode {
+     background: none repeat scroll 0% 0% transparent;
+     border: medium none;
+     font-size: 80%;
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+.ecollege #optionsMenu .dijitDropDownButton .dijitButtonNode .dijitArrowButtonInner {
+     background: none repeat scroll 0% 0% transparent;
+     display: none;
+}
+
+.ecollege #optionsMenu .dijitDropDownButton .dijitButtonNode .dijitButtonText,
+.ecollege #optionsMenu .dijitDropDownButtonHover .dijitButtonNode .dijitButtonText {
+     background: url(images/gear_light_author-options.png) no-repeat scroll right center transparent;
+     color: #666;
+     padding-right: 20px;
+     text-transform: lowercase;
+}
+
+.ecollege .centerContentContainer {
+    background-color: #FFFFFF;
+    display: inline-block !important;
+    width: 98% !important;
+    padding: 0 1% 0 1%;
+}
+
+
+
+
+/* Modify Pop Up Dialog */
+
+.ecollege .dijitDialog {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px; 
+}
+
+.ecollege .dijitDialogTitleBar {
+    background: #fff;
+    background-color: #fff;
+    color: #ccc;
+    padding: 5px;
+}
+
+.ecollege .dijitDialogCloseIcon {
+    background-image: url(images/closeModal.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 24px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    vertical-align: middle;
+    width: 24px;
+}
+
+/*.ecollege .dijitTab .dijitTabInnerDiv {
+    padding: 0 10px 8px 10px;
+}*/
+
+
+/* Tabs */
+.ecollege .dijitTabContainerTop-tabs .dijitTabInnerDiv {
+    padding: 0 10px 3px 10px;
+}
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabInnerDiv,
+.ecollege .dijitTabContainerTop-tabs .dijitTabCheckedHover .dijitTabInnerDiv {
+     padding: 0pt 10px 4px 10px;
+}
+
+/* This style is colliding with other widgets 
+.ecollege .dijitTabContainerTop-tabs .dijitTabChecked,
+.ecollege .dijitTabContainerTop-tabs .dijitTabCheckedHover {
+    border-top: 1px solid #CCC !important;
+    border-left: 1px solid #CCC !important;
+    border-right: 1px solid #CCC !important;
+    border-bottom: 1px solid #FFF !important;
+    background-color: #FFF !important;
+}
+*/
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabHover {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #F3F5F6;
+}
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabHover .dijitTabInnerDiv {
+    background: none #F3F5F6;
+}
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabCheckedHover .dijitTabInnerDiv {
+    background: none #FFFFFF;
+}
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabHover .dijitTabInnerDiv .dijitTabContent {
+    background: none repeat scroll 0% 0% #F3F5F6;
+}
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabCheckedHover .dijitTabInnerDiv .dijitTabContent {
+    background: none repeat scroll 0% 0% #FFFFFF;
+}
+
+.ecollege .dijitTabChecked .dijitTabInnerDiv .dijitTabContent {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     color: #ccc;
+}
+
+.listHeaders {
+     height: 22px !important;
+}
+
+.authorToolsItem span.icon.move {
+     background: url("images/move.png") no-repeat scroll 50% 50% transparent;
+}
+
+.authorToolsItem span.icon.restore {
+     background: url("images/restore.png") no-repeat scroll 50% 50% transparent;
+}
+
+.authorToolsItem > div span.icon.visible {
+     background: url("images/checked.png") no-repeat scroll 50% 50% transparent;
+}
+
+.authorToolsItem.gradable > div span.icon.gradable {
+     background: url("images/checked.png") no-repeat scroll 50% 50% transparent;
+}
+
+.authorToolsItem.gradable-off > div span.icon.gradable {
+     background: url("images/unchecked.png") no-repeat scroll 50% 50% transparent;
+}
+
+.authorToolsItem.hidden > div span.icon.visible {
+     background: url("images/unchecked.png") no-repeat scroll 50% 50% transparent ! important;
+}
+
+.authorToolsItem span.icon.delete {
+     background: url("images/delete.png") no-repeat scroll 50% 50% transparent;
+}
+
+.authorToolsItem span.icon.locked {
+    background: url("images/locked.png") no-repeat scroll 0 2px transparent !important;
+    cursor: default !important;
+}
+
+.authorToolsItem span.icon.delete {
+    margin: 0 12px;
+}
+
+.authorToolsItem span.icon.move {
+    margin: 0 18px;
+}
+
+.authorToolsItem span.icon.restore {
+    margin: 0 18px;
+}
+
+.authorToolsItem span.icon.gradable {
+    margin: 0 26px;
+}
+
+.authorToolsItem span.icon.visible {
+    margin: 0 32px;
+}
+
+.ecollege .dijitDialog .authorToolsItem > div.mouseOver {
+    background-color: #BFD8EC;
+}
+
+.ecollege #gbAuthorToolsTabContainer .dijitPlaceHolder {
+    top: -3px;
+    left: 3px;
+}
+
+.addPageCheckBox {
+     clear: left;
+     float: left;
+     height: 25px;
+     margin: 4px 10px 0 160px !important;
+     width: 25px;
+}
+
+.ecollege #gbAuthorToolsTabContainer .addPageButtonGroup .dijitButtonNode {
+    color: #525252;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    cursor: pointer;
+    text-align: center;
+    padding: .25em .75em .25em .75em;
+    text-shadow: none;
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .25em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    width: auto;
+    overflow: visible;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #195ca0;
+    border-width: 1px;
+    background: #c2d4e6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c2d4e6), to(#ffffff));
+    background: -moz-linear-gradient(top, #c2d4e6, #ffffff);
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2d4e6', endColorstr='#ffffff');*/
+}
+
+#widget_pointsPossible,
+#widget_pageNameTextBox {
+    margin-top: 3px;
+}
+
+.addPageDropDown {
+    width: 400px;
+}
+
+#pageTypeSelect td.dijitButtonContents {
+    width: 383px;
+    padding: 10px 5px;
+}
+
+#pageTypeSelect td.dijitArrowButton {
+    padding: 10px 5px;
+}
+
+
+
+/* Pop-Up Window */
+.ecollege div.popup {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  background: none #FFF;
+  opacity: 1;
+  position: absolute;
+  width: 310px;
+  z-index: 999;
+}
+
+.ecollege div.popup .inner {
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ddd;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px; 
+}
+
+.ecollege div.popup .inner h3 {
+    background-color: #fff;
+}
+
+.ecollege div.popup .moveMenuItemButtonGroup .dijitButtonNode {
+    color: #525252;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    cursor: pointer;
+    text-align: center;
+    padding: .25em .75em .4em .75em;
+    text-shadow: none;
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .25em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    width: auto;
+    overflow: visible;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #195ca0;
+    border-width: 1px;
+    background: #c2d4e6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c2d4e6), to(#ffffff));
+    background: -moz-linear-gradient(top, #c2d4e6, #ffffff);
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2d4e6', endColorstr='#ffffff');*/
+}
+
+.ecollege div.popup .moveMenuItemButtonGroup .cancelButton span {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
+    color: #0382E5;
+    font-size: 100%;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.ecollege div.popup .moveMenuItemButtonGroup .cancelButton span span span {
+    text-decoration: underline;
+}
+
+div.inner input {
+    color: #525252;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    cursor: pointer;
+    text-align: center;
+    padding: .25em .75em .25em .75em;
+    margin-bottom: 1em;
+    text-shadow: none;
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .25em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    width: auto;
+    overflow: visible;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #195ca0;
+    border-width: 1px;
+    background: #c2d4e6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c2d4e6), to(#ffffff));
+    background: -moz-linear-gradient(top, #c2d4e6, #ffffff);
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2d4e6', endColorstr='#ffffff');*/
+}
+
+div.inner input.dijitCheckBoxInput {
+    color: #FFFFFF;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+    text-shadow: none;
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: auto;
+    overflow: visible;
+    text-decoration: none;
+    border-style: solid;
+    border-color: none;
+    border-width: 0;
+    background: none;
+    background: none;
+    background: none;
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2d4e6', endColorstr='#ffffff');*/
+}
+
+div.inner input[value="Cancel"] {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
+    color: #0382E5;
+    text-decoration: underline;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.ecollege .dijitRadio, 
+.ecollege .dijitRadioIcon {
+    background-image: url("images/spriteRadioAssessments.png");
+    *background-image: none;
+}
+
+.ecollege .dijitCheckBox, 
+.ecollege .dijitCheckBoxIcon {
+    background-image: url("images/spriteCheckboxAssessments.png");
+    *background-image: none;
+}
+
+.ecollege div.popup span.moveToTop {
+     border-bottom: 1px solid #CDCDCD;
+     display: block;
+     margin: -16px 0 10px;
+     padding: 2px 0;
+}
+
+
+/* Extra Styles */
+
+/*.authorOptions {
+     float: right;
+     height: 20px;
+     overflow: hidden;
+     text-align: center;
+     width: 75px;
+}
+
+.authorOptions a {
+     background-color: #FFDDDD;
+     display: block;
+     font-size: 75%;
+     font-weight: normal;
+     padding: 5px;
+}
+
+.module {
+     background-color: #DDDDDD;
+     width: 100%;
+}
+
+#centerIFrame {
+     border: medium none;
+     clear: both;
+     width: 100%;
+}
+
+.modifymenu {
+     float: right;
+     height: 20px;
+     overflow: hidden;
+     text-align: center;
+     text-transform: lowercase;
+     width: 75px;
+}
+
+.modifymenu a, .modifymenu a:link, .modifymenu a:visited {
+     background: url("../images/icon_modify_lightgray.png") no-repeat scroll right center transparent;
+     color: #838383;
+     display: block;
+     font-size: 75%;
+     font-weight: normal;
+     margin-right: 5px;
+     padding: 2px 5px;
+     text-decoration: none;
+}
+
+.modifymenu a:hover {
+     background: url("../images/icon_modify_darkgray.png") no-repeat scroll right center transparent;
+     color: #000000;
+}
+
+div.module {
+     background-color: #F3F5F6;
+     font-size: 90%;
+     overflow: hidden;
+}
+
+div.module ul.mainMenu {
+     font-size: 90%;
+}
+
+div.module ul.mainMenu li a {
+     border-bottom: 1px solid #D3D3D3;
+     border-top: 1px solid #FFFFFF;
+     color: #333333;
+     display: block;
+     padding: 6px;
+     text-decoration: none;
+}
+
+div.module ul.mainMenu li.onlist a.on, div.module ul.mainMenu li a:hover {
+     background-color: #195699;
+     color: #FFFFFF;
+     font-weight: bold;
+     text-shadow: 0.1em 0.1em 0.2em #000000;
+}
+
+div.module ul.mainMenu li.onlist li a {
+     background: none repeat scroll 0% 0% transparent;
+}
+
+div.module ul.mainMenu ul li a:hover {
+     background-color: #D1DDEB;
+     color: #333333;
+     text-shadow: none;
+}
+
+div.module li.coursetools {
+     background-color: #FFFFFF;
+}
+
+div.module li .expander {
+     display: block;
+     float: left;
+     height: 8px;
+     padding-left: 3px;
+     width: 8px;
+     margin-top: 4px;
+}
+
+div.module li .label {
+     display: block;
+     text-decoration: none;
+}
+
+div.module li.level0 .label {
+     font-weight: bold;
+}
+
+div.module li.level0 li .label {
+     font-weight: normal;
+}
+
+div.module li.level0 .label {
+     margin-left: 20px;
+}
+
+div.module li.level0 li .label {
+     margin-left: 30px;
+}
+
+div.module li.level0 li li .label {
+     margin-left: 40px;
+}
+
+div.module li.level0 li li li .label {
+     margin-left: 50px;
+}
+
+.ecollege .dijitDialogUnderlay {
+     background: none repeat scroll 0pt 0pt #000000;
+     opacity: 0.75;
+}
+
+.ecollege .dijitDialogTitleBar {
+     background: -moz-linear-gradient(center top , #0065A0 0%, #185799 100%) repeat scroll 0pt 0pt transparent;
+     color: #FFFFFF;
+     padding: 5px;
+}
+
+.ecollege .dijitDialog .dijitDialogTitle {
+     color: #FFFFFF;
+}
+
+.ecollege .dijitDialog .dijitDialogPaneContent {
+     background: none repeat scroll 0% 0% #F3F5F6;
+     border-top: 1px solid #D3D3D3;
+     padding: 10px;
+}
+
+.ecollege .dijitDialog .authorToolsItem > div {
+     padding: 5px 0pt;
+}
+
+.ecollege .dijitDialog .authorToolsItem > div.mouseOver {
+     background-color: #CFDEEB;
+}
+
+.authorToolsItem div.icons {
+     float: right;
+     margin-top: 3px;
+}
+
+.authorToolsItem span.icon {
+     float: left;
+     height: 16px;
+     margin: 2px;
+     width: 16px;
+}
+
+.authorToolsItem span.icon.drag {
+     margin-right: 0pt ! important;
+     width: 0px;
+}
+
+.ecollege #authorToolsList .first {
+    
+}
+
+.listHeaders {
+     border-bottom: 1px solid #DDDDDD;
+     color: #777777;
+     font-size: 65%;
+     height: 18px;
+}
+
+.listHeaders span.listHeaderDrag {
+     display: none;
+}
+
+.listHeaders span {
+     padding: 2px 5px;
+}
+
+.listHeaderLeft {
+     float: left;
+}
+
+.listHeaderRight {
+     float: right;
+}
+
+.listHeaderShow, .listHeaderMove, .listHeaderArchive, .listHeaderDelete, .listHeaderRestore, .listHeaderIsGradable {
+     border-left: 1px solid #DDDDDD;
+}
+
+.ecollege div.thumb {
+     float: left;
+     margin: 40px 20px 10px;
+     width: 200px;
+}
+
+.ecollege div.thumb div {
+     float: left;
+}
+
+.stylePageButtonGroup {
+     clear: both;
+     float: left;
+     font-size: 75%;
+     margin-left: 20px;
+}
+
+.invalidElement {
+     outline: 1px solid #FF0000;
+}
+
+.invalidElementIE7 {
+     border: 1px solid #FF0000 ! important;
+}
+
+#pageTypeSelect td.dijitButtonContents {
+     width: 250px;
+}
+
+#pageTypeSelect_menu .dijitMenuItemHover, #pageTypeSelect_menu .dijitMenuItemSelected {
+     background-color: #DDDDDD ! important;
+}
+
+#pageTypeSelect_menu .dijitMenuItemLabel {
+     font-size: small;
+}
+
+.formline {
+     clear: both;
+     display: block;
+     float: left;
+     font-size: 75%;
+     margin: 20px 0pt 0pt;
+     width: 100%;
+}
+
+.addPageUploadedContentClass {
+     font-size: 12px;
+     padding: 12px;
+}
+
+.addPageLabel {
+     float: left;
+     font-weight: bold;
+     margin-right: 10px;
+     text-align: right;
+     width: 150px;
+}
+
+.addPageDescription {
+     float: left;
+     font-style: italic;
+     margin-left: 10px;
+     text-align: left;
+     width: 250px;
+}
+
+.addPageDropDown {
+     clear: right;
+     float: left;
+     width: 250px;
+}
+
+.addPageTextBox {
+     clear: right;
+     float: left;
+     width: 400px;
+}
+
+.addPageNumericTextBox {
+     clear: right;
+     float: left;
+     width: 60px;
+}
+
+.addPageSelect {
+     clear: right;
+     float: left;
+     width: 250px;
+}
+
+.addPageCheckBox {
+     clear: left;
+     float: left;
+     height: 25px;
+     margin: 0pt 10px 0pt 160px ! important;
+     width: 25px;
+}
+
+.addPageCheckBoxLabel {
+     clear: right;
+     float: left;
+}
+
+.addPageButton {
+     float: left;
+     margin-right: 10px;
+}
+
+.addPageButtonGroup {
+     clear: both;
+     float: left;
+     margin-left: 155px;
+}
+
+.ecollege .dijitTab, .ecollege .dijitTabListWrapper, .ecollege .dijitTabContainerTop-tabs {
+     margin: 2px 0pt 0pt;
+     padding: 0pt;
+     z-index: 999;
+}
+
+.ecollege .dijitTabHover, .ecollege .dijitTabChecked {
+     background-color: #FFFFFF;
+     border-color: #CCCCCC #CCCCCC #FFFFFF;
+     border-style: solid;
+     border-width: 1px;
+     color: #195699;
+}
+
+.ecollege .dijitTabInnerDiv {
+     background: none repeat scroll 0pt 50% transparent;
+     margin: 0pt;
+     padding: 0pt 10px 8px 5px;
+}
+
+.ecollege .dijitTab {
+     background: none repeat scroll 0% 0% transparent;
+     border-bottom: medium none;
+     color: #777777;
+     font-size: 80%;
+     font-weight: bold;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+.ecollege .dijitTabInnerDiv .dijitTabContent {
+     background: none repeat scroll 0% 0% transparent;
+     padding: 0pt;
+     position: relative;
+}
+
+.ecollege .dijitTabChecked .dijitTabInnerDiv, 
+.ecollege .dijitTabHover .dijitTabInnerDiv {
+     background: none repeat scroll 0% 0% #FFFFFF;
+}
+
+.ecollege .dijitTabChecked .dijitTabInnerDiv .dijitTabContent, 
+.ecollege .dijitTabHover .dijitTabInnerDiv .dijitTabContent {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     color: #195699 ! important;
+}
+
+.ecollege .dijitTabPaneWrapper {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+     border-right: 1px solid #CCCCCC;
+     border-style: none solid solid;
+     border-width: medium 1px 1px;
+     padding: 0pt;
+}
+
+.ecollege .dijitTabPaneWrapper .dijitContentPane {
+     border-top: medium none;
+}
+
+.ecollege .dijitTabContainerBottom-spacer, 
+.ecollege .dijitTabContainerTop-spacer {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     background: none repeat scroll 0pt 0pt #FFFFFF;
+     border-color: #CCCCCC #CCCCCC -moz-use-text-color;
+     border-style: solid solid none;
+     border-width: 1px 1px medium;
+     height: 2px;
+}
+
+.ecollege div.popup {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     border-radius: 0pt 0pt 0pt 0pt;
+     box-shadow: 1px 1px 3px #000000;
+     opacity: 1;
+     position: absolute;
+     width: 310px;
+     z-index: 999;
+}
+
+.ecollege div.popup .inner {
+     background: none repeat scroll 0% 0% transparent;
+     border-radius: 0pt 0pt 0pt 0pt;
+     border: 4px solid #195699;
+     padding: 0pt;
+}
+
+.ecollege div.popup .inner h3 {
+     background-color: #195699;
+     color: #FFFFFF;
+     padding: 2px 5px;
+}
+
+.ecollege div.popup hr {
+     display: none;
+}
+
+.ecollege .dijitRadio, 
+.ecollege .dijitRadioIcon {
+     height: 16px;
+     margin: 5px;
+     padding: 0pt;
+     width: 16px;
+}
+
+.ecollege div.popup div {
+     font-size: 80%;
+}
+
+.ecollege div.popup div.inner select {
+     margin: 5px;
+     width: 90%;
+}
+
+.dijitToggleButton, 
+.dijitButton, 
+.dijitDropDownButton, 
+.dijitComboButton {
+     color: #333333;
+     font-size: 90%;
+     margin: 5px 0pt 10px 5px;
+}
+
+.dj_ie .dijitCheckBoxInput {
+    
+}
+
+.ecollege div.popup .moveMenuItemButtonGroup .cancelButton span {
+     background: none repeat scroll 0% 0% transparent;
+     border: medium none;
+     color: #777777;
+     font-size: 95%;
+     text-decoration: none;
+}
+
+.ecollege div.popup > div.inner.success, 
+.ecollege div.popup > div.inner.error {
+     border: medium none;
+     padding: 10px;
+}*/

@@ -1,0 +1,76 @@
+/* ========= Styling rules to affect widgets ========= */
+
+@import "variables";
+
+.openclass.dijitPopup {
+	.box-shadow(0 1px 5px rgba(0,0,0,0.25));
+}
+.dijitTooltipDialogPopup {
+	/* exception popups: do not use a shadow on these because they aren't rectangular */
+	.box-shadow(none);
+}
+
+/* The highlight is shown in the ComboBox menu.  TODO: move to form/Common.less */
+.dijitComboBoxHighlightMatch {
+	background-color: @select-matchedtext-background-color;
+}
+
+.openclass .dijitFocusedLabel {
+	/* for checkboxes or radio buttons, hatch border around the corresponding label, to indicate focus */
+	outline: 1px dotted @focus-outline-color;
+}
+
+.openclass .dijitContentPaneLoading {
+	background:url('images/loadingAnimation.gif') no-repeat left center;
+	padding-left:25px;
+}
+
+/* .dijitContentPaneError icon renders in a dialog box with the error messsage when  there is an error in a HREF url */
+.openclass .dijitContentPaneError {
+    background:url('../../icons/images/commonIconsObjActEnabled.png') no-repeat left center;
+    background-position: -496px; 
+	padding-left:25px;
+}
+
+/* Drag and Drop */
+.openclass .dojoDndItemBefore,
+.openclass .dojoDndItemAfter{
+	border-top: 1px solid @dnd-dropseparator-color;
+}
+.openclass .dojoDndItemOver {
+	cursor:pointer;
+	}
+.openclass table.dojoDndAvatar {
+	border: 1px solid @border-color;
+	border-collapse: collapse;
+	background-color: @dnd-avatar-background-color;
+	.box-shadow(0 1px 3px rgba(0, 0, 0, .25));
+}
+.openclass .dojoDndAvatarHeader td	{ 
+	height: 20px;
+	padding-left:21px;
+}
+.openclass.dojoDndMove .dojoDndAvatarHeader, .openclass.dojoDndCopy .dojoDndAvatarHeader {
+	background-image: url(images/dnd.png);
+	background-repeat: no-repeat;
+	background-position:2px -122px;
+}
+.openclass .dojoDndAvatarItem td {
+	padding: 5px;
+}
+.openclass.dojoDndMove .dojoDndAvatarHeader	{
+	background-color: @dnd-avatar-header-background-color; 
+	background-position:2px -103px;
+}
+.openclass.dojoDndCopy .dojoDndAvatarHeader	{
+	background-color: @dnd-avatar-header-background-color; 
+	background-position:2px -68px;
+}
+.openclass.dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{
+	background-color: @dnd-avatar-candrop-header-background-color; 
+	background-position:2px -33px;
+}
+.openclass.dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{
+	background-color: @dnd-avatar-candrop-header-background-color;
+	background-position:2px 2px;
+}

@@ -1,0 +1,10 @@
+.openclass .dijitToggleButton .dijitCheckBoxIcon{background-image:url('../images/checkmarkNoBorder.png');}
+.dj_ie6 .openclass .dijitToggleButton .dijitCheckBoxIcon{background-image:url('../images/checkmarkNoBorder.gif');}
+.openclass .dijitCheckBox,.openclass .dijitCheckBoxIcon{background-image:url('images/checkboxRadioButtonStates.png');background-repeat:no-repeat;width:15px;height:16px;margin:0 2px 0 0;padding:0;}
+.dj_ie6 .openclass .dijitCheckBox,.dj_ie6 .openclass .dijitCheckBoxIcon{background-image:url('images/checkboxAndRadioButtons_IE6.png');}
+.openclass .dijitCheckBox,.openclass .dijitToggleButton .dijitCheckBoxIcon{background-position:-15px;}
+.openclass .dijitCheckBoxChecked,.openclass .dijitToggleButtonChecked .dijitCheckBoxIcon{background-position:0;}
+.openclass .dijitCheckBoxDisabled{background-position:-75px;}
+.openclass .dijitCheckBoxCheckedDisabled{background-position:-60px;}
+.openclass .dijitCheckBoxHover{background-position:-45px;}
+.openclass .dijitCheckBoxCheckedHover{background-position:-30px;}

@@ -1,0 +1,172 @@
+/* APP OVERRIDE - ADMIN	 */
+/* ADMIN */
+
+/* COLORS **********************************************************/
+
+/* Admin/Account Tab Area - Main Color */
+.admin .dijitTabContainerTop-tabs,
+.admin .dijitTabContainerTop-tabs,
+.claro .dijitDialogTitleBar {
+    border-top-color: #A09B8A;
+    background-color: #A09B8A;
+}
+
+
+.admin .dijitDialog {
+    border-color: #A09B8A;
+}
+
+
+/* Admin/Account inactive tab font color */
+.admin .dijitTabContainerTop-tabs .dijitTab .tabLabel,
+.basecollege .dijitDialogTitle {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* Admin/Account active tab font color, background color (a lighter shade of the main color) and inset shadow color */
+.admin .dijitTabContainerTop-tabs .dijitTabChecked .tabLabel,
+.admin .dijitTabContainerTop-tabs .dijitTabChecked.dijitTabHover .tabLabel,
+.admin .dijitTabContainerTop-tabs .dijitTabHover .tabLabel,
+.admin .dijitTabContainerTop-tabs .dijitTabActive .tabLabel {
+    color: #fff !important;
+    text-shadow: 1px 1px 0px #000000;  
+	background-color: #575347;
+	-webkit-box-shadow: inset 1px 1px 1px #27251e;
+	-moz-box-shadow: inset 1px 1px 1px #27251e;
+	box-shadow: inset 1px 1px 1px #27251e;
+}
+
+/* Admin Advanced Search Background */
+/* This should be a light color. Only change if it really clashes with the school color */
+.admin .courseSearch .advancedSearchContainer {
+    background-color: #BDE2FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NON-COLOR RELATED ADMIN OVERRIDES **********************/
+/* Berlin Sign-in header font size and padding */
+.admin .topContainer h1 {
+    padding-top: 15px;
+    font-size: 250% !important;
+}
+
+/* Admin/Account tab bar */
+.admin .dijitTabContainerTop-tabs {
+    border-top: none;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0; 
+    -webkit-border-radius: 5px 5px 0 0;
+}
+
+/* Turning off original tab color */
+.admin .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabInnerDiv {
+    background-color: transparent !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Admin/Account inactive tab */
+.admin .dijitTabContainerTop-tabs .dijitTab .tabLabel {
+    display: inline-block;
+    padding: 5px 20px;
+    min-height: 15px;
+    font-weight:  bold;
+    font-size: 110%;
+}
+
+/* Admin/Account active tab */
+.admin .dijitTabContainerTop-tabs .dijitTabChecked .tabLabel,
+.admin .dijitTabContainerTop-tabs .dijitTabHover .tabLabel,
+.admin .dijitTabContainerTop-tabs .dijitTabActive .tabLabel {
+    padding: 5px 20px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius:  15px 15px 15px 15px;
+    -webkit-border-radius:  15px 15px 15px 15px;
+    font-size: 110%;
+}
+
+/* Modal Window */
+.claro .dijitDialogUnderlay {
+    background: none repeat scroll 0 0 #000000;
+    opacity: 0.75;
+}
+ 
+.claro .dijitDialog {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D3D3D3;
+    padding: 0;
+}
+
+.claro .dijitDialogTitleBar {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-image: none;
+    background-repeat: none;
+    border-color: none;
+    border-right:none;
+    border-style: none;
+    border-width: none;
+    padding: 10px;
+}
+
+.basecollege .dijitDialogTitle {
+    font-weight: bold;
+    text-shadow: none;
+    font-size: 1.4em;
+}
+
+.claro .dijitDialogCloseIcon {
+    background: url("images/closeModal.png") no-repeat scroll 0 0 transparent;
+    height: 15px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 22px;
+    height: 22px;
+}
+
+.claro .dijitDialog {
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+}
+
+.claro .dijitDialog .formRow {
+    padding: 0;
+}
+
+.claro .dijitDialog .formLeft {
+    padding-top: 5px;
+}
+
+.claro .dijitTabContainerTop-tabs .dijitTabInnerDiv {
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 3px 5px 0 !important;
+}
+
+/* Font size on toolbar drop downs */
+.dijitPopup.ecollege_header_dialogPopup a {
+    color: #195AA6;
+    font-size: 130%;
+}

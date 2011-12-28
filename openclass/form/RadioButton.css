@@ -1,0 +1,12 @@
+.openclass .dijitToggleButton .dijitRadio,.openclass .dijitToggleButton .dijitRadioIcon{background-image:url('images/checkboxRadioButtonStates.png');}
+.dj_ie6 .openclass .dijitToggleButton .dijitRadio,.dj_ie6 .openclass .dijitToggleButton .dijitRadioIcon{background-image:url('images/checkboxAndRadioButtons_IE6.png');}
+.openclass .dijitRadio,.openclass .dijitRadioIcon{background-image:url('images/checkboxRadioButtonStates.png');background-repeat:no-repeat;width:15px;height:15px;margin:0 2px 0 0;padding:0;}
+.dj_ie6 .openclass .dijitRadio,.dj_ie6 .openclass .dijitRadioIcon{background-image:url('images/checkboxAndRadioButtons_IE6.png');}
+.openclass .dijitRadio{background-position:-105px;}
+.openclass .dijitToggleButton .dijitRadioIcon{background-position:-107px;}
+.openclass .dijitRadioDisabled{background-position:-165px;}
+.openclass .dijitRadioHover{background-position:-135px;}
+.openclass .dijitRadioChecked{background-position:-90px;}
+.openclass .dijitToggleButtonChecked .dijitRadioIcon{background-position:-92px;}
+.openclass .dijitRadioCheckedHover{background-position:-120px;}
+.openclass .dijitRadioCheckedDisabled{background-position:-150px;}

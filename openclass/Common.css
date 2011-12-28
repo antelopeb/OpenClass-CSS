@@ -1,0 +1,16 @@
+.openclass.dijitPopup{-webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.25);-moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.25);box-shadow:0 1px 5px rgba(0, 0, 0, 0.25);}
+.dijitTooltipDialogPopup{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+.dijitComboBoxHighlightMatch{background-color:#abd6ff;}
+.openclass .dijitFocusedLabel{outline:1px dotted #4a4a4a;}
+.openclass .dijitContentPaneLoading{background:url('images/loadingAnimation.gif') no-repeat left center;padding-left:25px;}
+.openclass .dijitContentPaneError{background:url('../../icons/images/commonIconsObjActEnabled.png') no-repeat left center;background-position:-496px;padding-left:25px;}
+.openclass .dojoDndItemBefore,.openclass .dojoDndItemAfter{border-top:1px solid #769dc0;}
+.openclass .dojoDndItemOver{cursor:pointer;}
+.openclass table.dojoDndAvatar{border:1px solid #b5bcc7;border-collapse:collapse;background-color:#ffffff;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);}
+.openclass .dojoDndAvatarHeader td{height:20px;padding-left:21px;}
+.openclass.dojoDndMove .dojoDndAvatarHeader,.openclass.dojoDndCopy .dojoDndAvatarHeader{background-image:url(images/dnd.png);background-repeat:no-repeat;background-position:2px -122px;}
+.openclass .dojoDndAvatarItem td{padding:5px;}
+.openclass.dojoDndMove .dojoDndAvatarHeader{background-color:#f58383;background-position:2px -103px;}
+.openclass.dojoDndCopy .dojoDndAvatarHeader{background-color:#f58383;background-position:2px -68px;}
+.openclass.dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader{background-color:#97e68d;background-position:2px -33px;}
+.openclass.dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader{background-color:#97e68d;background-position:2px 2px;}

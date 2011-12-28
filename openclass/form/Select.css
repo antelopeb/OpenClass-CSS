@@ -1,0 +1,20 @@
+.openclass .dijitSelect .dijitButtonText{padding:2px;}
+.openclass .dijitSelect{border:1px solid #b5bcc7;background-color:#ffffff;border-collapse:separate;}
+.dj_ie6 .openclass .dijitSelect,.dj_ie6 .openclass .dijitSelect .dijitButtonNode{background-image:none;}
+.openclass .dijitSelect .dijitButtonContents{border:0 solid #b5bcc7;border-right-width:1px;}
+.openclass .dijitSelect .dijitArrowButton{padding:0;border:1px solid #ffffff;border-top:none;background-color:#efefef;background-image:url("images/formHighlight.png");background-repeat:repeat-x;}
+.openclass .dijitSelect .dijitArrowButton .dijitArrowButtonInner{background-image:url("images/commonFormArrows.png");background-position:-35px 70%;background-repeat:no-repeat;width:16px;height:16px;}
+.openclass .dijitSelectHover{border:1px solid #769dc0;background-color:#e9f4fe;background-image:url('images/textBox_back.png');background-repeat:repeat-x;}
+.openclass .dijitSelectHover .dijitButtonContents{border-color:#769dc0;}
+.openclass .dijitSelectHover .dijitArrowButton{background-color:#abd6ff;}
+.openclass .dijitSelectHover .dijitArrowButton .dijitArrowButtonInner{background-position:-70px 70%;}
+.openclass .dijitSelectFocused{border:1px solid #769dc0;}
+.openclass .dijitSelectFocused .dijitButtonContents{border-color:#769dc0;}
+.openclass .dijitSelectFocused .dijitArrowButton{background-color:#7dbefa;background-position:0 -177px;border:none;padding:0 1px;}
+.openclass .dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner{background-position:-70px 70%;margin-bottom:1px;}
+.openclass .dijitSelectDisabled{border:1px solid #d3d3d3;background-color:#efefef;background-image:none;color:#818181;}
+.openclass .dijitSelectDisabled .dijitArrowButton{background-color:#efefef;}
+.openclass .dijitSelectDisabled .dijitArrowButton .dijitArrowButtonInner{background-position:0 70%;}
+.openclass .dijitSelectMenu td.dijitMenuItemIconCell,.openclass .dijitSelectMenu td.dijitMenuArrowCell{display:none;}
+.openclass .dijitSelectMenu td.dijitMenuItemLabel{padding:2px;}
+.openclass .dijitSelectMenu .dijitMenuSeparatorTop{border-bottom:1px solid #769dc0;}

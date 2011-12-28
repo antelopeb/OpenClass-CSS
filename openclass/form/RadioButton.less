@@ -1,0 +1,84 @@
+/* RadioButton
+ * 
+ * Styling RadioButton mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitRadio|.dijitRadioIcon - for border, padding, width|height and background image
+ * 
+ * 2. RadioButton within ToggleButton
+ * 		.dijitToggleButton|.dijitToggleButtonChecked .* - for background image
+ * 
+ * 3. Checked state
+ * 		.dijitRadioChecked - for checked background-color|image
+ * 		.dijitToggleButtonChecked - for border, background-color|image, display and width|height
+ * 
+ * 4. Hover state
+ * 		.dijitRadioHover|.dijitRadioCheckedHover - for background image
+ * 
+ * 5. Disabled state
+ * 		.dijitRadioDisabled|.dijitRadioCheckedDisabled - for background image
+ */
+
+@import "../variables";
+
+.openclass .dijitToggleButton .dijitRadio,
+.openclass .dijitToggleButton .dijitRadioIcon {
+	background-image: url('images/checkboxRadioButtonStates.png');
+}
+
+.dj_ie6 .openclass .dijitToggleButton .dijitRadio,
+.dj_ie6 .openclass .dijitToggleButton .dijitRadioIcon {
+	background-image: url('images/checkboxAndRadioButtons_IE6.png');
+}
+
+.openclass .dijitRadio,
+.openclass .dijitRadioIcon	{		/* inside a toggle button */
+	background-image: url('images/checkboxRadioButtonStates.png'); /* checkbox sprite image */
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px 0 0;
+	padding: 0;
+}
+
+.dj_ie6 .openclass .dijitRadio,
+.dj_ie6 .openclass .dijitRadioIcon	{		/* inside a toggle button */
+	background-image: url('images/checkboxAndRadioButtons_IE6.png'); /* checkbox sprite image */
+}
+
+.openclass .dijitRadio{
+	/* unselected */
+	background-position: -105px;
+}
+
+.openclass .dijitToggleButton .dijitRadioIcon {
+	/* unselected */
+	background-position: -107px;
+}
+
+.openclass .dijitRadioDisabled {
+	/* unselected and disabled */
+	background-position: -165px;
+}
+
+.openclass .dijitRadioHover {
+	/* hovering over an unselected enabled radio button */
+	background-position: -135px;
+}
+
+.openclass .dijitRadioChecked{
+	background-position: -90px;
+}
+
+.openclass .dijitToggleButtonChecked .dijitRadioIcon {
+	background-position: -92px;
+}
+
+.openclass .dijitRadioCheckedHover{
+	background-position: -120px;
+}
+
+.openclass .dijitRadioCheckedDisabled {
+	/* selected but disabled */
+	background-position: -150px;
+}

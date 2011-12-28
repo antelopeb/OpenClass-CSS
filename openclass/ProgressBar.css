@@ -1,0 +1,7 @@
+.openclass .dijitProgressBar{margin:2px 0 2px 0;}
+.openclass .dijitProgressBarEmpty{background:#ffffff url("images/progressBarEmpty.png") repeat-none left;border-color:#769dc0;}
+.openclass .dijitProgressBarTile{background:#abd6ff url("images/progressBarFull.png") repeat-x top;}
+.dj_ie6 .openclass .dijitProgressBarTile{background-image:none;}
+.openclass .dijitProgressBarFull{border-right:1px solid #769dc0;}
+.openclass .dijitProgressBarLabel{color:#000000;}
+.openclass .dijitProgressBarIndeterminate .dijitProgressBarTile{background:#efefef url("images/progressBarAnim.gif") repeat-x top;}

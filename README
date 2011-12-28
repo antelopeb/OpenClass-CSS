@@ -1,0 +1,18 @@
+README for the OpenClass style package
+
+The style package for OpenClass includes the styles necessary to
+style the OpenClass project to a base look and feel.
+
+To call the styles in your development environment and simulate the 
+overrides that occur in production you can call the following 
+files in the following order:
+
+openclass.css (dojo widget theme)
+appStyles.css (style the application itself)
+OC_overrides.css (style overrides per institution)
+
+This implementation is dependant on the presence of dojo.css.
+Dojo.css provides it's own reset and rebuild of styles.
+
+Final production files will be compressed and minified to reduce
+http calls.

@@ -1,0 +1,21 @@
+.openclass .dijitButtonNode{-webkit-transition-property:background-color;-moz-transition-property:background-color;transition-property:background-color;-webkit-transition-duration:0.3s;-moz-transition-duration:0.3s;transition-duration:0.3s;}
+.openclass .dijitButton .dijitButtonNode,.openclass .dijitDropDownButton .dijitButtonNode,.openclass .dijitComboButton .dijitButtonNode,.openclass .dijitToggleButton .dijitButtonNode{border:1px solid #769dc0;padding:2px 4px 4px 4px;background-image:url("images/button.png");background-position:center top;background-repeat:repeat-x;background-color:#e9f4fe;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.15);box-shadow:0 1px 1px rgba(0, 0, 0, 0.15);}
+.openclass .dijitComboButton .dijitArrowButton{border-left-width:0;padding:4px 2px 4px 2px;}
+.openclass .dijitArrowButtonInner{width:15px;height:15px;margin:0 auto;background-image:url("images/buttonArrows.png");background-repeat:no-repeat;background-position:-51px 53%;}
+.openclass .dijitLeftArrowButton .dijitArrowButtonInner{background-position:-77px 53%;}
+.openclass .dijitRightArrowButton .dijitArrowButtonInner{background-position:-26px 53%;}
+.openclass .dijitUpArrowButton .dijitArrowButtonInner{background-position:0 53%;}
+.openclass .dijitDisabled .dijitArrowButtonInner{background-position:-151px 53%;}
+.openclass .dijitDisabled .dijitLeftArrowButton .dijitArrowButtonInner{background-position:-177px 53%;}
+.openclass .dijitDisabled .dijitRightArrowButton .dijitArrowButtonInner{background-position:-126px 53%;}
+.openclass .dijitDisabled .dijitUpArrowButton .dijitArrowButtonInner{background-position:-100px 53%;}
+.openclass .dijitButtonText{padding:0 0.3em;text-align:center;}
+.openclass .dijitButtonHover .dijitButtonNode,.openclass .dijitDropDownButtonHover .dijitButtonNode,.openclass .dijitComboButton .dijitButtonNodeHover,.openclass .dijitComboButton .dijitDownArrowButtonHover,.openclass .dijitToggleButtonHover .dijitButtonNode{background-color:#abd6ff;color:#000000;-webkit-transition-duration:0.2s;-moz-transition-duration:0.2s;transition-duration:0.2s;}
+.openclass .dijitButtonActive .dijitButtonNode,.openclass .dijitDropDownButtonActive .dijitButtonNode,.openclass .dijitComboButtonActive .dijitButtonNode,.openclass .dijitToggleButtonActive .dijitButtonNode{background-color:#abd6ff;-webkit-box-shadow:0 0 0 rgba(0, 0, 0, 0);-moz-box-shadow:0 0 0 rgba(0, 0, 0, 0);box-shadow:0 0 0 rgba(0, 0, 0, 0);-webkit-transition-duration:0.1s;-moz-transition-duration:0.1s;transition-duration:0.1s;}
+.openclass .dijitButtonDisabled,.openclass .dijitDropDownButtonDisabled,.openclass .dijitComboButtonDisabled,.openclass .dijitToggleButtonDisabled{background-image:none;outline:none;}
+.openclass .dijitButtonDisabled .dijitButtonNode,.openclass .dijitDropDownButtonDisabled .dijitButtonNode,.openclass .dijitComboButtonDisabled .dijitButtonNode,.openclass .dijitToggleButtonDisabled .dijitButtonNode{background-position:0 -149px;background-color:#efefef;border:solid 1px #d3d3d3;color:#818181;-webkit-box-shadow:0 0 0 rgba(0, 0, 0, 0);-moz-box-shadow:0 0 0 rgba(0, 0, 0, 0);box-shadow:0 0 0 rgba(0, 0, 0, 0);}
+.openclass .dijitComboButtonDisabled .dijitArrowButton{border-left-width:0;}
+.openclass table.dijitComboButton{border-collapse:separate;}
+.dj_ie6 .openclass .dijitButtonNode{background-image:none;}
+.openclass .dijitComboButton .dijitStretch{-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px;}
+.openclass .dijitComboButton .dijitArrowButton{-moz-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0;}

@@ -1,0 +1,14 @@
+.openclass .dijitTabContainerTop-tabs .dijitTabRtl,.openclass .dijitTabContainerBottom-tabs .dijitTabRtl{margin-right:0;margin-left:1px;}
+.openclass .dijitTabRtl{-moz-box-orient:horizontal;text-align:right;}
+.dj_ie7 .openclass .dijitTabRtl .dijitTabContent{display:block;left:0;}
+.dj_ie7 .openclass .dijitTabContainerTop-tabs .dijitTabRtl,.dj_ie7 .openclass .dijitTabContainerTop-tabs .dijitTabCheckedRtl{top:1px;}
+.dj_ie7 .openclass .tabStripButtonRtl .dijitButtonContents,.dj_ie8 .openclass .tabStripButtonRtl .dijitButtonContents,.dj_ie6 .openclass .dijitTabContainerTop-tabs .dijitTabRtl .dijitTabInnerDiv,.dj_ie6 .openclass .dijitTabContainerBottom-tabs .dijitTabRtl .dijitTabInnerDiv,.dj_ie7 .openclass .dijitTabContainerTop-tabs .dijitTabRtl .dijitTabInnerDiv,.dj_ie7 .openclass .dijitTabContainerBottom-tabs .dijitTabRtl .dijitTabInnerDiv,.dj_iequirks .openclass .dijitTabContainerTop-tabs .dijitTabRtl .dijitTabInnerDiv,.dj_iequirks .openclass .dijitTabContainerBottom-tabs .dijitTabRtl .dijitTabInnerDiv{float:left;}
+.dj_ie6 .openclass .dijitTabRtl .tabLabel,.dj_ie6 .openclass .dijitTabContainerRight-tabs .dijitTabRtl,.dj_ie6 .openclass .dijitTabContainerLeft-tabs .dijitTabRtl,.dj_ie7 .openclass .dijitTabContainerRight-tabs .dijitTabRtl .dijitTabInnerDiv,.dj_ie7 .openclass .dijitTabContainerLeft-tabs .dijitTabRtl .dijitTabInnerDiv{zoom:1;}
+.dj_ie6 .openclass .dijitTabRtl .dijitTabCloseButton,.dj_ie7 .openclass .dijitTabRtl .dijitTabCloseButton,.dj_iequirks .openclass .dijitTabRtl .dijitTabCloseButton{margin-right:5px;}
+.dj_ie6 .openclass .dijitTabContainerRightRtl .dijitTabContainerRight-tabs,.dj_ie6 .openclass .dijitTabContainerLeftRtl .dijitTabContainerLeft-tabs{width:1%;}
+.dj_ie6 .dijitTabContainerTopStrip,.dj_ie6 .dijitTabContainerBottomStrip{position:absolute;}
+.dj_iequirks .openclass .dijitTabContainerTopRtl .dijitTabContainerTopStrip{padding-top:10px;}
+.dj_ie7 .openclass .dijitTabContainerRight-tabs .dijitTabRtlChecked .dijitTabInnerDiv{background-position:-341px -179px;}
+.dj_ie6 .dijitTabContainerTopRtl .dijitTabStripIcon,.dj_ie6 .dijitTabContainerBottomRtl .dijitTabStripIcon{position:relative;}
+.dj_ie6-rtl .openclass .dijitTabContainerTop-tabs{padding-left:3px;}
+.dj_iequirks-rtl .openclass .dijitTabListWrapper{border-left:1px solid #ffffff;border-right:1px solid #ffffff;}

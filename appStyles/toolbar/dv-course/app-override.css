@@ -1,0 +1,783 @@
+/* APP OVERRIDE - DV Course */
+/* DV Course */
+
+/* Color for main header bar */
+#header {
+    background-color: #A09B8A;
+    border: 1px solid #A09B8A;
+}
+
+/* Color for type in main header bar */
+#header h1.coursetitle {
+    color: #EFEBDE;
+}
+
+/* Color for settings widget in header bar. Must have enough contrast to show icon. */
+#courseSettingsMenu {
+    background-color: #B8A48B;
+    border-left: 1px solid #525252;
+}
+
+/* Color for left and right modify menus */
+#navcontainer .moduletitlebar,
+#contentcontainer #optionsMenu {
+    background: none;
+    background-color: #e84e0f;
+    border-color: #e84e0f;
+}
+
+/* Color for type in left and right modify menus. Must have enough contrast from background color. */
+#navcontainer .modifymenu a,
+#navcontainer .modifymenu a:link, 
+#navcontainer .modifymenu a:hover,
+#navcontainer .modifymenu a:visited,
+.ecollege #optionsMenu .dijitDropDownButton .dijitButtonNode .dijitButtonText,
+.ecollege #optionsMenu .dijitDropDownButtonHover .dijitButtonNode .dijitButtonText {
+    color: #EFEBDE;
+}
+
+/* Border color for pop up dialog boxes */
+.ecollege .dijitDialog,
+.ecollege div.popup .inner {
+    border-color: #F26522;
+}
+
+/* Header bar and text color for pop up dialog boxes. */
+.ecollege .dijitDialogTitleBar,
+.ecollege div.popup .inner h3 {
+    background-color: #e84e0f;
+    color: #fff; /* text color */
+}
+
+/* Color for type in tabs of modify window */
+.ecollege .dijitTabChecked .dijitTabInnerDiv .dijitTabContent, 
+.ecollege .dijitTabHover .dijitTabInnerDiv .dijitTabContent {
+     color: #195AA6;
+     padding: 10px;
+}
+
+/* SOCIAL COURSE HOME */
+/* Social Course Home Tab Strip Background Color */
+.jupiter .cCleftColumn a,
+.jupiter#jupiter .cCleftColumn a,
+.jupiter .cCRightColumn a,
+.jupiter#jupiter .cCRightColumn a {
+    color: #195AA6;
+}
+
+.jupiter .cCleftColumn a:hover,
+.jupiter#jupiter .cCleftColumn a:hover,
+.jupiter .cCRightColumn a:hover,
+.jupiter#jupiter .cCRightColumn a:hover {
+    color: #e84e0f;
+}
+
+.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs, 
+.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs  {
+    background-color: #A09B8A;
+}
+
+/* Social Course Home Tab Pill On State & Hover State Background color */
+.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTabChecked,
+.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab:hover,
+.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTabChecked,
+.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab:hover {
+    background-color: #575347 !important;
+    -webkit-box-shadow: inset 1px 1px 1px #27251e;
+    -moz-box-shadow: inset 1px 1px 1px #27251e;
+    box-shadow: inset 1px 1px 1px #27251e !important;
+}
+
+/* Social Course Home Selected & Hover Tab Text */
+.jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTabChecked > .dijitTabInnerDiv > .dijitTabContent .tabLabel,
+.jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTab:hover > .dijitTabInnerDiv > .dijitTabContent  .tabLabel,
+.jupiter#jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTabChecked > .dijitTabInnerDiv > .dijitTabContent .tabLabel,
+.jupiter#jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTab:hover > .dijitTabInnerDiv > .dijitTabContent  .tabLabel {
+    color: #fff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* Social Course Home Unselected Tab Text */
+.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab > .dijitTabInnerDiv > .dijitTabContent > div > .tabLabel,
+.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab > .dijitTabInnerDiv > .dijitTabContent > div > .tabLabel,
+.jupiter .feedContainerCourse > .dijitTabContainer .feedFilteringRight > label,
+.jupiter#jupiter .feedContainerCourse > .dijitTabContainer .feedFilteringRight > label {
+    color: #fff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* Share button on Social Course Home */
+.jupiter .dijitContentPane .makeRemark .dijitButton,
+.jupiter#jupiter .dijitContentPane .makeRemark .dijitButton,
+.jupiter .dijitContentPane .makeRemark .dijitButtonActive,
+.jupiter#jupiter .dijitContentPane .makeRemark .dijitButtonActive,
+.nihilo .jupiter .makeRemark .dijitButtonHover .dijitButtonNode, 
+.nihilo .jupiter#jupiter .makeRemark .dijitButtonHover .dijitButtonNode {
+    background: #195AA6;
+    border: none;
+    color: #fff;
+}
+    
+/* Announcements Tab On State */
+.jupiter .skinnyContentBox .dijitTab:hover,
+.jupiter .skinnyContentBox .dijitTabChecked,
+.jupiter#jupiter .skinnyContentBox .dijitTab:hover,
+.jupiter#jupiter .skinnyContentBox .dijitTabChecked {
+    background-color: #0382E5 !important;
+    -webkit-box-shadow: inset 1px 1px 1px #3177AD;
+    -moz-box-shadow: inset 1px 1px 1px #3177AD;
+    box-shadow: inset 1px 1px 1px #3177AD;
+}
+
+/* Secondary Tabs on Profile Page - Typically you don't have to change this color */
+.jupiter .profileContainer > .dijitTabContainer > div > .dijitTabChecked,
+.jupiter .profileContainer > .dijitTabContainer > div > .dijitTab:hover
+.jupiter#jupiter .profileContainer > .dijitTabContainer > div > .dijitTabChecked,
+.jupiter#jupiter .profileContainer > .dijitTabContainer > div > .dijitTab:hover {
+    background: #fff  !important;
+    border: 1px solid #ccc !important;
+    border-bottom: none !important;
+}
+
+
+/* COLOR STYLES FOR ASSESSMENTS - TEMPORARY */
+/* Color for pills under Assessment Author */
+/* Color for the bar housing the pills under Assessment Author */
+.assessments .slideTab .slideStackController {
+    background-color: #A09B8A !important;
+}
+
+/* Color for the arrow under the bar housing the pills under Assessment Author */
+.assessments .slideTab .dangly {
+    border-color: #A09B8A transparent transparent !important;
+}
+
+.assessments .slideTab .dijitFocused .dijitButtonText, 
+.assessments .slideTab .slideStackController .dijitButtonText:hover,
+.assessments .slideTab .slideStackController .dijitChecked .dijitButtonText {
+    color: #fff !important;
+    text-shadow: 1px 1px 0px #000000 !important;
+	background-color: #575347;
+	-webkit-box-shadow: inset 1px 1px 1px #27251e;
+	-moz-box-shadow: inset 1px 1px 1px #27251e;
+	box-shadow: inset 1px 1px 1px #27251e;
+}
+
+/* Color for close link next to pills under Assessment Author */
+.assessments .slideTab .sortArrow {
+    color: #fff !important;
+}
+
+/* Color for the text of the pills under Assessment Author */
+.assessments .slideTab .slideStackController .dijitButtonText {
+    color: #FFF !important;
+    text-shadow: 1px 1px 0px #000000 !important;  
+}
+
+/* Color for modal windows */
+.assessments .dijitDialogTitleBar {
+    background-color: #e84e0f !important;
+    border-color: #e84e0f !important;
+}
+
+.assessments .editQuestionControls {
+    border-color: #e84e0f !important;
+    border-top: 1px solid #999 !important;
+}
+
+.assessments .editQuestionContainer {
+border-left: 1px solid #e84e0f !important;
+border-right: 1px solid #e84e0f !important;
+}
+
+
+
+
+
+
+
+
+/* Override to position the date posted in the activity feed. Line 89 in course home.css */
+.jupiter#jupiter span.feedCourseName {
+clear: none !important;
+margin: 0 !important;
+}
+
+/* TEMP Social Course Home Announcements Popup Styles */
+.contentPopOut_Announce {
+margin: 0 auto;
+width: 600px;
+}
+
+.contentPopOut_Announce .closePopOut label {
+font-size: 80%;
+}
+
+.contentPopOut_Announce .closePopOut #markAsReadCheckbox {
+margin: 10px 5px 10px 10px;
+}
+
+.contentPopOut_Announce .dijitDialogPaneContent > h2 {
+padding: 0 0 10px 0;
+margin: 0;
+}
+
+.contentPopOut_Announce .dijitDialogPaneContent > .announceBody {
+font-size: 0.9em;
+padding-bottom: 10px;
+overflow: auto;
+height: 320px;
+}
+
+.contentPopOut_Announce .dijitDialogPaneContent > .announceFooter {
+padding-top: 8px;
+border-top: 1px solid #ccc;
+font-size: 0.8em;
+color: #555;
+/* Hack to hide UNDEFINED */
+text-indent: -75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ASSESSMENT OVERRIDE */
+/* STRUCTURE CHANGES */
+/* Aggregated Prof View */
+
+/* Success and Error Popup on Adding Items */
+div.popup > div.inner.error > h3,
+div.popup > div.inner.success > h3 {
+    padding-top: 5px !important;
+    padding-left: 35px !important;
+}
+
+
+.assessments .dijitTitlePane,
+.gradebook .dijitTitlePane { 
+    position: relative !important;
+} 
+
+.assessments .examSummaryGraph {
+    border: 1px solid #EEEEEE !important;
+    float: left !important;
+    margin: 1em !important;
+    padding: 0 1em 1em 0 !important;
+}
+
+.assessments .performanceTopLeft p,
+.assessments .performanceTopRight p,
+.assessments .performanceBottomLeft p,
+.assessments .performanceBottomRight p {
+    margin-bottom: 0em !important;
+    
+}
+
+.assessments .graphParticipantsLabel {
+    margin-top: 25% !important;
+    margin-left: 1em !important;
+}
+
+.assessments .examSummaryStats {
+    margin-top: 1em !important;
+}
+
+
+.assessments .questionExplanationNode {
+    display: none !important;
+}
+.assessments .configArea li, 
+.assessments .scheduleArea li, 
+.assessments .introConfig li {
+    margin-left: 1em !important;
+}
+
+/* Prof Author View */
+
+.assessments .dijitDialog .dijitDialogTitle {
+    display: block !important;
+}
+
+.assessments .dijitDialog .dijitDialogTitle {
+    padding: 5px;
+}
+
+.assessments span.questionTypeSelect {
+    font-weight: normal;
+}
+
+.assessments .slideTab .slideStackController {
+    padding-top: 0.4em !important;
+}
+
+.assessments .slideTab .slideStackController #assessments_author_slideTab_slideStackController_0_dijit_layout_ContentPane_0 {
+    display: none !important;
+}
+.assessments .slideTab .slideStackController .dijitButtonText {
+    text-shadow: 1px 1px 0px #000000 !important;
+    position: relative !important;
+    top: -5px !important;
+    padding: 5px 20px !important;
+    font-weight: bold !important;
+    font-size: 80% !important;
+    text-decoration: none !important;
+}
+.assessments .slideTab .slideStackController .dijitButtonText:hover {
+    border-radius: 15px 15px 15px 15px !important;
+    -moz-border-radius:  15px 15px 15px 15px !important;
+    -webkit-border-radius:  15px 15px 15px 15px !important; 
+}
+.assessments .slideTab .dijitFocused .dijitButtonText {
+    border-radius: 15px 15px 15px 15px !important;
+    -moz-border-radius:  15px 15px 15px 15px !important;
+    -webkit-border-radius:  15px 15px 15px 15px !important;
+}
+.assessments .slideTab .dijitStackContainer {
+    border: 0 solid #000000 !important;
+    margin-top: -20px !important;
+    padding: 0 !important !important;
+}
+.assessments .slideTab .dijitStackController {
+    margin-left: 1em !important;
+}
+.assessments .slideTab .dijitStackController .dijitToggleButton {
+    margin-bottom: 0em !important;
+}
+.assessments .slideTab .dangly {
+    border-style: solid !important;
+    border-width: 10px !important;
+    height: 0 !important;
+    position: relative !important;
+    width: 0 !important;
+    z-index: 10 !important;
+}
+.assessments .slideTab .sortArrow {
+    cursor: pointer !important;
+    float: right !important;
+    margin: .5em 2em .3em .3em !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: .75em !important;
+    font-decoration: underlined !important;
+}
+
+/* GRADEBOOK OVERRIDE */
+/* STRUCTURE CHANGES */
+/* Gradebook Styles */
+
+.gradebook .dojoxGrid {
+    background: none no-repeat transparent !important;
+    font: 90% Verdana, "Lucida Grande", sans-serif !important;
+    background-color: none !important;
+    outline: none !important;
+}
+
+.gradebook .dojoxGridMasterHeader {
+    height: 55px !important;
+}
+
+.gradebook .dojoxGridHeader {
+    left: 0;
+    background: none no-repeat transparent !important;
+}
+
+.gradebook .dojoxGridHeader .gb-item-points-possible {
+    font-style: italic !important;
+    padding-top: 5px !important;
+    font-size: 90% !important;
+}
+
+.gradebook .dojoxGridHeader table {
+    text-align: inherit !important;
+    height: auto !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.gradebook .dojoxGridHeader .dojoxGridCell {
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-right: 1px solid #ddd !important;
+    color: #555 !important;
+    width: 110px !important;
+    height: 55px !important;
+    font-size: 75% !important;
+    vertical-align: bottom !important;
+    padding: 0 5px 5px 5px !important;
+    text-align: center !important;
+    background: none #fff no-repeat !important;
+}
+
+.gradebook .dojoxGridHeader .dojoxGridCellOver {
+    background: none #fff no-repeat !important;
+}
+
+.gradebook .dojoxGridHeader .dojoxGridCellFocus {
+    background-color: none !important;  
+}
+
+.gradebook .dojoxGridScrollbox {
+    background-color: #fff !important;
+}
+
+.gradebook .dojoxGridHeader th.gb-fixed-column:first-child {
+    width: 188px !important;
+    text-align: left !important;
+}
+
+.gradebook .dojoxGridHeader .dojoxGridCell span {
+    display: block !important;
+    clear: both !important;
+}
+
+.gradebook .dojoxGridScrollbox {
+    background-color: none !important;
+}
+
+.gradebook .dojoxGridContent table {
+    text-align: inherit !important;
+    height: auto !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.gradebook .dojoxGridContent .dojoxGridCellFocus {
+    background-color: #FFE284 !important;   
+}
+
+.gradebook .dojoxGridContent .dojoxGridCell {
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-right: 1px solid #ddd !important;
+    color: #333 !important;
+    width: 110px !important;
+    height: 40px !important;
+    font-size: 80% !important;
+    vertical-align: middle !important;
+    padding: 0 5px !important;
+    text-align: center !important;
+}
+
+.gradebook .dojoxGridRowTable td.gb-fixed-column:first-child {
+    width: 188px !important;
+    text-align: left !important;
+}
+
+
+
+/* rowbar */
+
+.gradebook .dojoxGridRowbar { 
+    border: none !important;
+    background: none no-repeat #fff !important;
+    border-right: none !important;
+    padding: 0px !important;
+}
+
+.gradebook .dojoxGridRowbarInner {
+    border: none !important;
+    border-bottom: none !important;
+}
+
+.gradebook .dojoxGridRowbarOver {
+    background: none #fff no-repeat right !important;
+}
+
+.gradebook .dojoxGridRowbarSelected {
+    background: none #D9E8F9 no-repeat center !important;
+    border-right: none !important;
+}
+
+/* rows */
+
+.gradebook .dojoxGridRow {
+    border: none;
+    background-color: inherit !important;
+}
+
+.gradebook .dojoxGridRowOver {
+    border-top-color: inherit !important;
+    border-bottom-color: inherit !important;
+}
+
+.gradebook .dojoxGridRowOver .dojoxGridCell {
+    background-color: inherit !important; 
+}
+
+.gradebook .dojoxGridRowOdd {
+    background-color: #f2f5f9 !important;
+}
+
+/* cells */
+
+.gradebook .dojoxGridCell {
+    border: 1px solid #D5CDB5 !important;
+    border-left-color: transparent !important;
+    border-top-color: transparent !important;
+}
+
+.gradebook .dojoxGridCellFocus {
+    border: none !important;
+        background-color: #ffe284 !important;
+}
+
+.gradebook .dojoxGridRowOver .dojoxGridCellOver {
+    border: none !important;
+    background-color: #aec7e3 !important;
+}
+
+/* Pop-up box */
+
+.gradebook .dijitPopup .grade-quick-edit {
+    background: none no-repeat #eee !important;
+    width: 240px !important;
+    font-size: 90% !important;
+    padding: 10px 18px 10px 10px !important;
+}
+
+.gradebook .grade-quick-edit-title {
+    display: none !important;
+}
+
+.gradebook .grade-quick-edit-content {
+    font-size: 80% !important;
+    padding-top: 10px !important;
+}
+
+.gradebook .grade-quick-edit-content .dijitTextBox {
+    border: 1px solid #555 !important;
+    background: none #fff no-repeat !important;
+    height: 25px !important;
+    padding-top: 3px !important;
+    padding-left: 5px !important;
+    font-size: 130% !important;
+}
+
+.gradebook .grade-quick-edit-content label {
+    font-size: 80% !important;
+    font-weight: bold !important;
+    color: #555 !important;
+}
+
+.gradebook .grade-quick-edit-content .grade-points-section,
+.gradebook .grade-quick-edit-content .letter-grade-section {
+    width: 90px !important;
+}
+
+.gradebook .grade-quick-edit-content .grade-points-section {
+    float: left !important;
+}
+
+.gradebook .grade-quick-edit-content .letter-grade-section {
+    float: right !important;
+}
+
+.gradebook .grade-quick-edit-content .comments-section {
+    padding-top: 15px;
+}
+
+.gradebook .grade-quick-edit-content .show-to-student-section {
+    margin: 15px 0 !important;
+    clear: both !important;
+}
+
+.gradebook .grade-quick-edit-content .comments-section {
+    margin-top: 50px !important;
+}
+
+.gradebook .grade-quick-edit-content .grade-points-section .dijitTextBox,
+.gradebook .grade-quick-edit-content .letter-grade-section .dijitTextBox,
+.gradebook .grade-quick-edit-content .comments-section .dijitTextBox {
+    width: 100% !important;
+    clear: both !important;
+    margin: 0 !important;
+}
+
+/* Buttons */
+
+.gradebook .grade-quick-edit-content .save-section .dijitButtonNode  { 
+    font-weight: bold;
+    font-size: 100%; 
+}
+
+.gradebook .grade-quick-edit-content .save-section a#lnkCancel {
+    text-decoration: none !important;
+    padding-left: 2px !important;
+}
+
+.gradebook .grade-quick-edit-content .save-section a#lnkViewDetails {
+    clear: none !important;
+    float: right !important;
+    margin-top: 0 !important;
+}
+
+/* Grade By Assignment */
+
+.gradebook .dojoxGrid .gb-cell-student-name {
+    width: 200px !important;
+}
+
+.gradebook .dojoxGrid .gb-cell-comments {
+    width: 230px !important;
+}
+
+.gradebook .dojoxGrid .gb-cell-is-visible,
+.gradebook .dojoxGrid .gb-cell-points,
+.gradebook .dojoxGrid .gb-cell-letter-grade,
+.gradebook .dojoxGrid .gb-cell-view-details {
+    width: 60px !important;
+}
+
+.gradebook .dojoxGrid td.gb-cell-comments {
+    text-align: left !important;
+}
+
+.gradebook .select-assignment-section {
+    border: 1px solid #ccc !important;
+    margin-bottom: 10px !important;
+    padding: 10px !important;
+    font-size: 80% !important;
+    background: #ddd !important;    
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc)) !important;    
+    background: -moz-linear-gradient(top,  #eee,  #ccc) !important;
+}
+
+/* Grade By Assignment - Details View */
+
+.gradebook .dijitToolbar {
+	background: none repeat scroll 0 0 #EFEFEF;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 0 0 !important;
+	margin: 0 !important;
+	padding: 3px;
+}
+
+.gradebook .dijitEditorIFrameContainer {
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-radius: 0 0 5px 5px;
+	border-right: 1px solid #CCCCCC;
+	height: 8em;
+	margin: 0;
+	overflow: auto;
+	padding: 0 0 0 10px;
+}
+
+.gradebook .dijitEditorIFrame {
+	height: 100% !important;
+}
+
+.gradebook .dijitTitlePaneContentInner .buttons-container {
+	border: none !important;
+	padding: 0 !important;
+}
+
+/* LIGHTBOX ADD PAGE */
+/* STRUCTURE CHANGES */
+/* ----------------- */
+
+#pageTypeSelect td.dijitButtonContents {
+    width: 200px;
+}
+
+.addPageDropDown {
+    width: 200px !important;
+}
+
+.addPageDropDown {
+    clear: none !important;
+    float: left;
+    width: 200px;
+}
+
+.addPageLabel {
+    float: left;
+    font-weight: bold;
+    font-size: 90%;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: right;
+    width: 150px;
+}
+
+.addPageDescription {
+    clear: none !important;
+    float: left;
+    font-style: italic;
+    margin-top: 4px;
+    margin-left: 10px;
+    text-align: left;
+    width: 300px;
+}
+
+.formline {;
+    margin: 13px 0 0;
+}
+
+.dijitInputInner {
+    padding-left: 5px !important;
+}
+
+.ecollege .dijitDialogTitleBar, .ecollege div.popup .inner h3 {
+    padding: 0 !important;
+}
+
+.ecollege .dijitDialog .dijitDialogTitle {
+    display: none;
+}
+
+.ecollege .dijitDialogCloseIcon {
+    z-index: 9999;
+}
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabHover,
+.ecollege .dijitTabContainerTop-tabs .dijitTabInnerDiv,
+.ecollege .dijitTabContainerTop-tabs .dijitTabContent,
+.ecollege .dijitTabContainerTop-tabs .dijitTab .tabLabel,
+.ecollege .dijitTabContainerTop-tabs .dijitTabChecked {
+    background: none !important;
+    border: none !important;
+}
+
+.ecollege .dijitTabContainerTop-tabs .dijitTabCheckedHover .dijitTabInnerDiv,
+.ecollege .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabInnerDiv,
+.ecollege .dijitTabContainerTop-tabs .dijitTabHover .dijitTabInnerDiv,
+.ecollege .dijitTabContainerTop-tabs .dijitTabInnerDiv {
+    padding; 0 !important;
+}
+
+.ecollege .dijitTabCheckedHover .dijitTabInnerDiv,
+.ecollege .dijitTabChecked .dijitTabInnerDiv,
+.ecollege .dijitTabHover .dijitTabInnerDiv,
+.ecollege .dijitTabInnerDiv {
+    padding: 0 5px 2px !important;
+}
+
+.ecollege .dijitTabCheckedHover .dijitTabContent,
+.ecollege .dijitTabChecked .dijitTabContent,
+.ecollege .dijitTabHover .dijitTabContent,
+.ecollege .dijitTabContent {
+    padding: 15px 5px 0 5px !important;
+}
+
+.ecollege .dijitTab .tabLabel {
+    min-height: inherit !important;
+    padding; 0 !important;
+}

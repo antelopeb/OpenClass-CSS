@@ -1,0 +1,170 @@
+/* APP OVERRIDE - DASHBOARD */
+/* Dashboard */
+
+/* Tab Strip Background Color
+   Note: This is the shcools "primary" color. Dark/bold colors work best here.
+         The background and border colors below should always be the same */
+.basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper,
+.basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper {
+    border-bottom-color: #A09B8A;
+}
+.basecollege #listFeedTabs > .dijitTabListContainer-top,
+.basecollege #profileTabs > .dijitTabListContainer-top {
+    background-color: #A09B8A;
+}
+
+/* Tab Strip Tab Text Color (Unselected Tab)
+   Note: Text color should contrast the Tab Strip Background Color */
+.basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab,
+.basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* Tab Strip Tab Text Color (Selected Tab)
+   Note: Text color should contrast the Tab Strip Tab Color */
+.basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab:hover,
+.basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTabChecked,
+.basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab:hover,
+.basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTabChecked {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* Tab Strip Tab Color
+   Note: The tab color should be a variation of the Tab Strip Background Color
+         This applies only to a selected or hovered tab color. An unselected tab is 'transparent' */
+.basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab:hover,
+.basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTabChecked,
+.basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab:hover,
+.basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTabChecked {
+	background-color: #575347;
+	-webkit-box-shadow: inset 1px 1px 1px #27251e;
+	-moz-box-shadow: inset 1px 1px 1px #27251e;
+	box-shadow: inset 1px 1px 1px #27251e;
+}
+
+/* Profile Editor Upload Button Background and Text Color
+   Note: Background color should be same as Tab Strip Background Color
+         Text color should be same as Tab Strip Tab Text Color (Unselected Tab) */
+.basecollege .formButton {
+    background-color: #195AA6;
+    color: #ffffff;
+}
+
+/* Profile Editor Submit Button Background and Text Color
+   Note: Should resemble a lighter variation on the Profile Editor Upload Button colors */
+.basecollege .submitBttn {
+    background-color: #D7E8F7;
+    border-color: #CCDBE8;
+    color: #666;
+}
+
+/* Hyperlinks 
+   Note: Anchor color should be the same as Tab Strip Background Color
+         Hover color can be whatever variation makes sense */
+.basecollege a {
+    color: #195AA6;
+}
+.basecollege a:hover {
+    color:#e84e0f;
+}
+
+/* People Search Background
+    Note: This should be a lighter color of the main tab stripe */
+.feedFilteringContainer {
+background: none repeat scroll 0 0 #E1DDCD;
+}
+
+/* Modal fixes for create course and edit course */
+/* Modal Window */
+.claro .dijitDialogUnderlay {
+    background: none repeat scroll 0 0 #000000;
+    opacity: 0.75;
+}
+ 
+.claro .dijitDialog {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D3D3D3;
+    padding: 0;
+}
+
+.claro .dijitDialogTitleBar {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-image: none;
+    background-repeat: none;
+    border-color: none;
+    border-right:none;
+    border-style: none;
+    border-width: none;
+    padding: 10px;
+    border-top-color: #A09B8A;
+    background-color: #A09B8A;
+}
+
+.basecollege .dijitDialogTitle {
+    font-weight: bold;
+    text-shadow: none;
+    color: #fff;
+}
+
+.claro .dijitDialogCloseIcon {
+    background: url("images/closeModal.png") no-repeat scroll 0 0 transparent;
+    height: 15px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 22px;
+    height: 22px;
+}
+
+.claro.dijitDialog {
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.claro .dijitTabContainerTop-tabs .dijitTabInnerDiv {
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 3px 5px 0 !important;
+}
+
+.claro .formRow {
+    line-height: 1em;
+    padding: 0;
+}
+
+.claro .formLeft {
+	padding-top: 5px;
+}
+
+.claro .dialogButtons {
+    font-size: 0.8em;
+    padding-top: 0;
+}
+
+.basecollege .basecollege {
+	min-width: 100px;
+}
+
+.claro .sitepenValidationTextBox .dijitTextBox, .claro .adminDateBox .dijitInputInner {
+    font-size: 0.8em;
+}
+
+.dijitCalendarPopup.claro {
+    font-size: .8em;
+    line-height: .9em;
+}
+
+.claro .adminSearchHub {
+    font-size: .8em;
+    line-height: 1.4em;
+}

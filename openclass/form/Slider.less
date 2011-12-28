@@ -1,0 +1,362 @@
+/* Slider 
+ * 
+ * Styling Slider mainly includes styling the Slider progress bar (dijitSliderProgressBar)
+ * 
+ * Slider progress bar:
+ * 1. Slider progress bar (default styling): 
+ * 		.dijitSliderProgressBarH - progress bar at the middle of horizontal slider
+ * 		.dijitSliderLeftBumper - bar at the left of horizontal slider
+ * 		.dijitSliderRightBumper - bar at the right of horizontal slider
+ * 		.dijitSliderProgressBarV - progress bar at the middle of vertical slider
+ * 		.dijitSliderTopBumper - bar at the top of vertical slider
+ * 		.dijitSliderBottomtBumper - bar at the bottom of vertical slider
+ * 
+ * 2. hovered Slider progress bar (ie, mouse hover on progress bar)
+ * 		.dijitSliderHover .dijitSliderProgressBarH(horizontal) - hovered bar style: background, border
+ * 
+ * 3. focused Slider progress bar (ie, mouse focused on progress bar)
+ * 		.dijitSliderFocused .dijitSliderProgressBarH(horizontal) - focus bar style: background, border
+ * 
+ * 4. disabled/read-only Slider progress bar 
+ * 		.dijitSliderDisabled .dijitSliderProgressBarH(horizontal) - bar styles when slider is disabled
+ * 
+ * 
+ * Slider Thumbs:
+ * 1. Slider Thumbs (default styling): 
+ * 		.dijitSliderImageHandleH / .dijitSliderImageHandleV - styles for the controller on the progress bar
+ * 
+ * 2. hovered Slider Thumbs (ie, mouse hover on slider thumbs)
+ * 		.dijitSliderHover .dijitSliderImageHandleH - hovered controller style
+ * 
+ * 3. focused Slider progress bar (ie, mouse focused on slider thumbs)
+ * 		.dijitSliderFocused .dijitSliderImageHandleV - focused controller style
+ * 
+ * 
+ * Slider Increment/Decrement Buttons:
+ * 1. Slider Increment/Decrement Buttons (default styling): 
+ * 		.dijitSliderDecrementIconH - decrement icon which lies at the left of horizontal slider
+ * 		.dijitSliderIncrementIconH - increment icon which lies at the right of horizontal slider
+ * 		.dijitSliderDecrementIconV - decrement icon which lies at the bottom of vertical slider
+ * 		.dijitSliderIncrementIconV - increment icon which lies at the top of vertical slider
+ * 
+ * 2. hovered Slider Increment/Decrement Buttons (mouse hover on the icons)
+ * 		.dijitSliderHover .dijitSliderDecrementIconH - for background, border
+ * 
+ * 3. active Slider Increment/Decrement Buttons (mouse down on the icons)
+ * 		.dijitSliderActive .dijitSliderIncrementIconV - for background, border
+ * 
+ * 4. disabled/read-only Slider Increment/Decrement Buttons
+ * 		.dijitSliderDisabled .dijitSliderDecrementIconH - styles for the icons in disabled slider
+ * 		.dijitSliderReadOnly .dijitSliderIncrementIconV - styles for the icons in read-only slider
+ */
+
+@import "../variables";
+
+.openclass .dijitSliderBar {
+	border-style: solid;
+	outline: 1px;
+}
+.openclass .dijitSliderFocused .dijitSliderBar {
+	border-color: @focused-border-color;
+}
+.openclass .dijitSliderHover .dijitSliderBar {
+	border-color: @hovered-border-color;
+}
+.openclass .dijitSliderDisabled .dijitSliderBar {
+	background-image: none;
+	border-color: @disabled-border-color;
+}
+
+/* Horizontal Slider */
+
+.openclass .dijitRuleLabelsContainerH {
+	padding: 2px 0;
+}
+.openclass .dijitSlider .dijitSliderProgressBarH,
+.openclass .dijitSlider .dijitSliderLeftBumper{
+	background-image: url("images/sliderHorizontal.png");
+	background-repeat:repeat-x;
+	background-position:0 -20px;
+	border-color: @border-color;
+	background-color: @slider-fullbar-background-color;
+}
+.openclass .dijitSlider .dijitSliderRemainingBarH,
+.openclass .dijitSlider .dijitSliderRightBumper{
+	background-image: url("images/sliderHorizontal.png");
+	background-repeat:repeat-x;
+	background-position:0 -11px;
+	border-color: @border-color;
+	background-color: @slider-remainingbar-background-color;
+}
+.openclass .dijitSliderRightBumper {
+	border-right: solid 1px @border-color;
+}
+.openclass .dijitSliderLeftBumper {
+	border-left: solid 1px @border-color;
+}
+.openclass .dijitSliderHover .dijitSliderProgressBarH,
+.openclass .dijitSliderHover .dijitSliderLeftBumper{
+	background-position:0 -20px;
+	background-color: @slider-hovered-fullbar-background-color;
+	border-color: @hovered-border-color;
+}
+.openclass .dijitSliderHover .dijitSliderRemainingBarH,
+.openclass .dijitSliderHover .dijitSliderRightBumper{
+	background-position:0 0;
+	background-color: @slider-hovered-remainingbar-background-color;
+	border-color: @hovered-border-color;
+}
+.openclass .dijitSliderFocused .dijitSliderProgressBarH,
+.openclass .dijitSliderFocused .dijitSliderLeftBumper{
+	background-position:0 -30px;
+	background-color: @slider-focused-fullbar-background-color;
+	border-color: @focused-border-color;
+}
+.openclass .dijitSliderFocused .dijitSliderRemainingBarH,
+.openclass .dijitSliderFocused .dijitSliderRightBumper{
+	background-position:0 -9px;
+	background-color: @slider-focused-remainingbar-background-color;
+	border-color: @focused-border-color;
+}
+.openclass .dijitSliderDisabled .dijitSliderProgressBarH,
+.openclass .dijitSliderDisabled .dijitSliderLeftBumper{
+	background-color: @disabled-border-color;		/* left side of slider, fill matches border */
+	background-image:none;
+}
+.openclass .dijitSliderDisabled .dijitSliderRemainingBarH,
+.openclass .dijitSliderDisabled .dijitSliderRightBumper{
+	background-color: @disabled-background-color;
+}
+
+/* Vertical Slider */
+
+.openclass .dijitRuleLabelsContainerV {
+	padding: 0 2px;
+}
+.openclass .dijitSlider .dijitSliderProgressBarV,
+.openclass .dijitSlider .dijitSliderBottomBumper{
+	background-image: url("images/sliderVertical.png");
+	background-repeat:repeat-y;
+	background-position:-36px 0;
+	border-color: @border-color;
+	background-color: @slider-fullbar-background-color;
+}
+.openclass .dijitSlider .dijitSliderRemainingBarV,
+.openclass .dijitSlider .dijitSliderTopBumper{
+	background-image: url("images/sliderVertical.png");
+	background-repeat:repeat-y;
+	background-position:-3px 0;
+	border-color: @border-color;
+	background-color: @slider-remainingbar-background-color;
+}
+.openclass .dijitSliderBottomBumper {
+	border-bottom: solid 1px @border-color;
+}
+.openclass .dijitSliderTopBumper {
+	border-top: solid 1px @border-color;
+}
+.openclass .dijitSliderHover .dijitSliderProgressBarV,
+.openclass .dijitSliderHover .dijitSliderBottomBumper{
+	background-position:-36px 0;
+	background-color: @slider-hovered-fullbar-background-color;
+}
+.openclass .dijitSliderHover .dijitSliderRemainingBarV,
+.openclass .dijitSliderHover .dijitSliderTopBumper{
+	background-position:0 0;
+	background-color: @slider-hovered-remainingbar-background-color;
+}
+.openclass .dijitSliderFocused .dijitSliderProgressBarV,
+.openclass .dijitSliderFocused .dijitSliderBottomBumper{
+	background-position:-56px 0;
+	background-color: @slider-focused-fullbar-background-color;
+}
+.openclass .dijitSliderFocused .dijitSliderRemainingBarV,
+.openclass .dijitSliderFocused .dijitSliderTopBumper{
+	background-position:-18px 0;
+	background-color: @slider-focused-remainingbar-background-color;
+}
+.openclass .dijitSliderDisabled .dijitSliderProgressBarV,
+.openclass .dijitSliderDisabled .dijitSliderBottomBumper{
+	background-color: @disabled-border-color;	/* bottom side of slider, fill matches border */
+}
+.openclass .dijitSliderDisabled .dijitSliderRemainingBarV,
+.openclass .dijitSliderDisabled .dijitSliderTopBumper{
+	background-color: @disabled-background-color;
+}
+
+
+/* ------- Thumbs ------- */
+
+.openclass .dijitSliderImageHandleH {
+	border: 0;
+	width: 18px;
+	height: 16px;
+	background-image: url("images/sliderThumbs.png");
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.openclass .dijitSliderHover .dijitSliderImageHandleH {
+	background-position:-18px 0;
+}
+.openclass .dijitSliderFocused .dijitSliderImageHandleH {
+	background-position:-36px 0;
+}
+.openclass .dijitSliderProgressBarH .dijitSliderThumbHover{
+	background-position:-36px 0;
+}
+.openclass .dijitSliderProgressBarH .dijitSliderThumbActive{
+	background-position:-36px 0;
+}
+.openclass .dijitSliderReadOnly .dijitSliderImageHandleH,
+.openclass .dijitSliderDisabled .dijitSliderImageHandleH {
+	background-position:-54px 0;
+}
+.openclass .dijitSliderImageHandleV {
+	border: 0;
+	width: 18px;
+	height: 16px;
+	background-image: url("images/sliderThumbs.png");
+	background-repeat:no-repeat;
+	background-position:-289px 0;
+}
+.openclass .dijitSliderHover .dijitSliderImageHandleV {
+	background-position:-307px 0;
+}
+.openclass .dijitSliderFocused .dijitSliderImageHandleV {
+	background-position:-325px 0;
+}
+.openclass .dijitSliderProgressBarV .dijitSliderThumbHover{
+	background-position:-325px 0;
+}
+.openclass .dijitSliderProgressBarV .dijitSliderThumbActive{
+	background-position:-325px 0;
+}
+.openclass .dijitSliderReadOnly .dijitSliderImageHandleV,
+.openclass .dijitSliderDisabled .dijitSliderImageHandleV {
+	background-position:-343px 0;
+}
+
+/* ---- Increment/Decrement Buttons ---- */
+
+.openclass .dijitSliderButtonContainerH{
+	padding: 1px 3px 1px 2px;
+}
+.openclass .dijitSliderButtonContainerV{
+	padding: 3px 1px 2px 1px;
+}
+.openclass .dijitSliderDecrementIconH,
+.openclass .dijitSliderIncrementIconH,
+.openclass .dijitSliderDecrementIconV,
+.openclass .dijitSliderIncrementIconV {
+	background-image: url('images/commonFormArrows.png');
+	background-repeat:no-repeat;
+	background-color: @arrowbutton-background-color;
+	.border-radius(2px);
+	border: solid 1px @border-color;
+	font-size: 1px;
+}
+.openclass .dijitSliderDecrementIconH,
+.openclass .dijitSliderIncrementIconH {
+	height: 12px;
+	width: 9px;
+}
+.openclass .dijitSliderDecrementIconV,
+.openclass .dijitSliderIncrementIconV {
+	height: 9px;
+	width: 12px;
+}
+.openclass .dijitSliderActive .dijitSliderDecrementIconH,
+.openclass .dijitSliderActive .dijitSliderIncrementIconH,
+.openclass .dijitSliderActive .dijitSliderDecrementIconV,
+.openclass .dijitSliderActive .dijitSliderIncrementIconV,
+.openclass .dijitSliderHover .dijitSliderDecrementIconH,
+.openclass .dijitSliderHover .dijitSliderIncrementIconH,
+.openclass .dijitSliderHover .dijitSliderDecrementIconV,
+.openclass .dijitSliderHover .dijitSliderIncrementIconV {
+	/* dijitSliderActive should be treated as dijitSliderHover since "clicking the slider" has no meaning */
+	border: solid 1px @hovered-border-color;
+	background-color: @slider-hoveredButton-background-color;
+}
+
+.openclass .dijitSliderDecrementIconH {
+	background-position:-357px 50%;
+}
+.openclass .dijitSliderActive .dijitSliderDecrementIconH
+.openclass .dijitSliderHover .dijitSliderDecrementIconH {
+	background-position:-393px 50%;
+}
+.openclass .dijitSliderIncrementIconH {
+	background-position:-251px 50%;
+}
+.openclass .dijitSliderActive .dijitSliderIncrementIconH
+.openclass .dijitSliderHover .dijitSliderIncrementIconH {
+	background-position:-283px 50%;
+}
+.openclass .dijitSliderDecrementIconV {
+	background-position:-38px 50%;
+}
+.openclass .dijitSliderActive .dijitSliderDecrementIconV
+.openclass .dijitSliderHover .dijitSliderDecrementIconV {
+	background-position:-73px 50%;
+}
+.openclass .dijitSliderIncrementIconV {
+	background-position:-143px 49%;
+}
+.openclass .dijitSliderActive .dijitSliderIncrementIconV
+.openclass .dijitSliderHover .dijitSliderIncrementIconV {
+	background-position:-178px 49%;
+}
+.openclass .dijitSliderButtonContainerV .dijitSliderDecrementButtonHover,
+.openclass .dijitSliderButtonContainerH .dijitSliderDecrementButtonHover,
+.openclass .dijitSliderButtonContainerV .dijitSliderIncrementButtonHover,
+.openclass .dijitSliderButtonContainerH .dijitSliderIncrementButtonHover {
+	background-color: @slider-button-hovered-background-color;
+}
+.openclass .dijitSliderButtonContainerV .dijitSliderDecrementButtonActive,
+.openclass .dijitSliderButtonContainerH .dijitSliderDecrementButtonActive,
+.openclass .dijitSliderButtonContainerV .dijitSliderIncrementButtonActive,
+.openclass .dijitSliderButtonContainerH .dijitSliderIncrementButtonActive {
+	background-color: @slider-button-pressed-background-color;
+	border-color:@pressed-border-color;
+}
+.openclass .dijitSliderButtonInner {
+	visibility: hidden;
+}
+.openclass .dijitSliderDisabled .dijitSliderBar{
+	border-color: @disabled-border-color;
+}
+.openclass .dijitSliderReadOnly *,.openclass .dijitSliderDisabled * {
+	border-color: @disabled-border-color;
+	color: @disabled-text-color;
+}
+.openclass .dijitSliderReadOnly .dijitSliderDecrementIconH,
+.openclass .dijitSliderDisabled .dijitSliderDecrementIconH {
+	background-position:-321px 50%;
+	background-color:@disabled-background-color;
+}
+.openclass .dijitSliderReadOnly .dijitSliderIncrementIconH,
+.openclass .dijitSliderDisabled .dijitSliderIncrementIconH {
+	background-position:-215px 50%;
+	background-color:@disabled-background-color;
+}
+.openclass .dijitSliderReadOnly .dijitSliderDecrementIconV,
+.openclass .dijitSliderDisabled .dijitSliderDecrementIconV {
+	background-position:-3px 49%;
+	background-color:@disabled-background-color;
+}
+.openclass .dijitSliderReadOnly .dijitSliderIncrementIconV,
+.openclass .dijitSliderDisabled .dijitSliderIncrementIconV {
+	background-position:-107px 49%;
+	background-color:@disabled-background-color;
+}
+
+.dj_ie6 .openclass .dijitSlider .dijitSliderProgressBarH,
+.dj_ie6 .openclass .dijitSlider .dijitSliderLeftBumper,
+.dj_ie6 .openclass .dijitSlider .dijitSliderRemainingBarH,
+.dj_ie6 .openclass .dijitSlider .dijitSliderRightBumper,
+.dj_ie6 .openclass .dijitSlider .dijitSliderProgressBarV,
+.dj_ie6 .openclass .dijitSlider .dijitSliderTopBumper,
+.dj_ie6 .openclass .dijitSlider .dijitSliderRemainingBarV,
+.dj_ie6 .openclass .dijitSlider .dijitSliderBottomBumper {
+	background-image:none;
+}
