@@ -1,8 +1,0 @@
-@import url("../../js/dojo-release-1.6.1-src/dojo/resources/dojo.css");
-body{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:.688em;color:#131313;}
-.openclass h1{font-size:1.545em;margin-bottom:0.727em;}
-.openclass h2{font-size:1.364em;line-height:1.455em;margin-top:1em;margin-bottom:0.60em;font-weight:normal;}
-.openclass h3,.openclass h4,.openclass h5,.openclass h6{font-size:1.091em;font-weight:normal;}
-.openclass p{line-height:1.3em;}
-.openclass pre,.openclass code{font-family:inherit;background-color:#efefef;border:1px solid #d3d3d3;}
-.openclass table.dojoTabular thead,.openclass table.dojoTabular tfoot{background-color:#efefef;border:1px solid #d3d3d3;}
