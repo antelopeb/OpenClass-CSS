@@ -6,7 +6,7 @@
 /* Admin/Account Tab Area - Main Color */
 .admin .dijitTabContainerTop-tabs,
 .admin .dijitTabContainerTop-tabs,
-.claro .dijitDialogTitleBar {
+.openclass .dijitDialogTitleBar {
     border-top-color: #A09B8A;
     background-color: #A09B8A;
 }
@@ -101,18 +101,18 @@
 }
 
 /* Modal Window */
-.claro .dijitDialogUnderlay {
+.openclass .dijitDialogUnderlay {
     background: none repeat scroll 0 0 #000000;
     opacity: 0.75;
 }
  
-.claro .dijitDialog {
+.openclass .dijitDialog {
     background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #D3D3D3;
     padding: 0;
 }
 
-.claro .dijitDialogTitleBar {
+.openclass .dijitDialogTitleBar {
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
     -moz-border-left-colors: none;
@@ -133,7 +133,7 @@
     font-size: 1.4em;
 }
 
-.claro .dijitDialogCloseIcon {
+.openclass .dijitDialogCloseIcon {
     background: url("images/closeModal.png") no-repeat scroll 0 0 transparent;
     height: 15px;
     position: absolute;
@@ -143,21 +143,21 @@
     height: 22px;
 }
 
-.claro .dijitDialog {
+.openclass .dijitDialog {
     border-radius: 5px;
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px;
 }
 
-.claro .dijitDialog .formRow {
+.openclass .dijitDialog .formRow {
     padding: 0;
 }
 
-.claro .dijitDialog .formLeft {
+.openclass .dijitDialog .formLeft {
     padding-top: 5px;
 }
 
-.claro .dijitTabContainerTop-tabs .dijitTabInnerDiv {
+.openclass .dijitTabContainerTop-tabs .dijitTabInnerDiv {
     background-image: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;

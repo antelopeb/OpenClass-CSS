@@ -31,9 +31,11 @@ mkdir -p "$VERSIONED_DIR"
 echo "Copying image and style files..."
 cp -R "$BASEDIR/common" "$VERSIONED_DIR/common/"
 cp -R "$BASEDIR/openclass" "$VERSIONED_DIR/openclass/"
+cp -R "$BASEDIR/appStyles" "$VERSIONED_DIR/appStyles/"
 cd $BASEDIR
 chmod 755 "$VERSIONED_DIR/openclass/"*
 chmod 755 "$VERSIONED_DIR/common/"*
+chmod 755 "$VERSIONED_DIR/appStyles"*
 
 echo "Removing .less files..."
 cd "$VERSIONED_DIR/openclass"

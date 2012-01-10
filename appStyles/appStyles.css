@@ -7,10 +7,10 @@ To use the overrides in OpenClass, simply call this one file, appStyles.css
 
 */
 
-import url("fonts.css");
-import url("epcustom.css");
-import url("digitalvellum/ecollege.css");
-import url("toolbar/inst-override.css");
-import url("toolbar/admin/app-override.css");
-import url("toolbar/dv-course/app-override.css");
-import url("toolbar/ph/app-override.css");
+@import url("fonts.css");
+@import url("epcustom.css");
+@import url("digitalvellum/ecollege.css");
+@import url("toolbar/inst-override.css");
+@import url("toolbar/admin/app-override.css");
+@import url("toolbar/dv-course/app-override.css");
+@import url("toolbar/ph/app-override.css");

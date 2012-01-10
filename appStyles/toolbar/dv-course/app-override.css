@@ -111,8 +111,8 @@
 .jupiter#jupiter .dijitContentPane .makeRemark .dijitButton,
 .jupiter .dijitContentPane .makeRemark .dijitButtonActive,
 .jupiter#jupiter .dijitContentPane .makeRemark .dijitButtonActive,
-.nihilo .jupiter .makeRemark .dijitButtonHover .dijitButtonNode, 
-.nihilo .jupiter#jupiter .makeRemark .dijitButtonHover .dijitButtonNode {
+.openclass .jupiter .makeRemark .dijitButtonHover .dijitButtonNode, 
+.openclass .jupiter#jupiter .makeRemark .dijitButtonHover .dijitButtonNode {
     background: #195AA6;
     border: none;
     color: #fff;

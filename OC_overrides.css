@@ -227,8 +227,8 @@ background: none repeat scroll 0 0 #E1DDCD;
 .jupiter#jupiter .dijitContentPane .makeRemark .dijitButton,
 .jupiter .dijitContentPane .makeRemark .dijitButtonActive,
 .jupiter#jupiter .dijitContentPane .makeRemark .dijitButtonActive,
-.nihilo .jupiter .makeRemark .dijitButtonHover .dijitButtonNode, 
-.nihilo .jupiter#jupiter .makeRemark .dijitButtonHover .dijitButtonNode {
+.openclass .jupiter .makeRemark .dijitButtonHover .dijitButtonNode, 
+.openclass .jupiter#jupiter .makeRemark .dijitButtonHover .dijitButtonNode {
     background: #195AA6;
     border: none;
     color: #fff;
@@ -313,7 +313,7 @@ border-right: 1px solid #e84e0f !important;
 /* Admin/Account Tab Area - Main Color */
 .admin .dijitTabContainerTop-tabs,
 .admin .dijitTabContainerTop-tabs,
-.claro .dijitDialogTitleBar {
+.openclass .dijitDialogTitleBar {
     border-top-color: #A09B8A;
     background-color: #A09B8A;
 }

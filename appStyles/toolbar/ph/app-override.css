@@ -78,18 +78,18 @@ background: none repeat scroll 0 0 #E1DDCD;
 
 /* Modal fixes for create course and edit course */
 /* Modal Window */
-.claro .dijitDialogUnderlay {
+.openclass .dijitDialogUnderlay {
     background: none repeat scroll 0 0 #000000;
     opacity: 0.75;
 }
  
-.claro .dijitDialog {
+.openclass .dijitDialog {
     background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #D3D3D3;
     padding: 0;
 }
 
-.claro .dijitDialogTitleBar {
+.openclass .dijitDialogTitleBar {
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
     -moz-border-left-colors: none;
@@ -112,7 +112,7 @@ background: none repeat scroll 0 0 #E1DDCD;
     color: #fff;
 }
 
-.claro .dijitDialogCloseIcon {
+.openclass .dijitDialogCloseIcon {
     background: url("images/closeModal.png") no-repeat scroll 0 0 transparent;
     height: 15px;
     position: absolute;
@@ -122,14 +122,14 @@ background: none repeat scroll 0 0 #E1DDCD;
     height: 22px;
 }
 
-.claro.dijitDialog {
+.openclass.dijitDialog {
     border-radius: 5px;
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px;
     border: 1px solid #fff;
 }
 
-.claro .dijitTabContainerTop-tabs .dijitTabInnerDiv {
+.openclass .dijitTabContainerTop-tabs .dijitTabInnerDiv {
     background-image: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -137,16 +137,16 @@ background: none repeat scroll 0 0 #E1DDCD;
     padding: 3px 5px 0 !important;
 }
 
-.claro .formRow {
+.openclass .formRow {
     line-height: 1em;
     padding: 0;
 }
 
-.claro .formLeft {
+.openclass .formLeft {
 	padding-top: 5px;
 }
 
-.claro .dialogButtons {
+.openclass .dialogButtons {
     font-size: 0.8em;
     padding-top: 0;
 }
@@ -155,16 +155,16 @@ background: none repeat scroll 0 0 #E1DDCD;
 	min-width: 100px;
 }
 
-.claro .sitepenValidationTextBox .dijitTextBox, .claro .adminDateBox .dijitInputInner {
+.openclass .sitepenValidationTextBox .dijitTextBox, .openclass .adminDateBox .dijitInputInner {
     font-size: 0.8em;
 }
 
-.dijitCalendarPopup.claro {
+.dijitCalendarPopup.openclass {
     font-size: .8em;
     line-height: .9em;
 }
 
-.claro .adminSearchHub {
+.openclass .adminSearchHub {
     font-size: .8em;
     line-height: 1.4em;
 }
