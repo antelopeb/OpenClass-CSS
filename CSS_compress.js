@@ -56,29 +56,32 @@ All line breaks are removed
 All @imports are hard coded
 */
 function compressCSS(data1, directory1) {
-	for(i=0;i<=data1.length;i++){
-		//analyze imports
-		//need to add recursiveness into this, so if an imported file has an import, that will be analyzed too.
-		var isImport = data1.indexOf('@');
-		
-		if (isImport != -1) {
-			var semiColon = data1.indexOf(';') + 1;
-			 	importData = data1.substring(data1.indexOf('@'), semiColon),
-			 	firstQuote = importData.indexOf('"') + 1,
-			 	element = importData.substring(firstQuote, importData.lastIndexOf('"')),
-			 	elementPath = directory1 + '/' + element;
-			
-			elementPath = path.normalize(elementPath);
-			console.log('Importing styles from: ' + elementPath);
 
-			var data = fs.readFileSync( elementPath, encoding="utf8");
-			//remove the import string from the file
-			data1 = data1.replace(importData, '');
-			
-			importedData += data;	
-		}
-	}
+		for(i=0;i<=data1.length;i++){
+			//analyze imports
+			var isImport = data1.indexOf('@');
 	
+			if (isImport != -1) {
+				var semiColon = data1.indexOf(';') + 1;
+				 	importData = data1.substring(data1.indexOf('@'), semiColon),
+				 	firstQuote = importData.indexOf('"') + 1,
+				 	element = importData.substring(firstQuote, importData.lastIndexOf('"')),
+				 	elementPath = directory1 + '/' + element;
+
+				elementPath = path.normalize(elementPath);
+				console.log('Importing styles from: ' + elementPath);
+
+				var data = fs.readFileSync( elementPath, encoding="utf8");
+				//add some recursive goodness here by analyzing the imported file
+				//You will have to intern the above functions into a function of it's own that calls itself.
+				
+				//remove the import string from the file
+				data1 = data1.replace(importData, '');
+
+				importedData += data;
+			}
+		}
+
 	data1 += importedData;
 
 	/*for(i=0;i<=data1.length;i++){
