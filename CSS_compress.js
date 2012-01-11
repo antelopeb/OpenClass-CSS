@@ -1,7 +1,6 @@
 var directory = process.argv[2],
 	fs = require('fs'),
-	path = require('path'),
-	importedData = '';
+	path = require('path');
 
 /* 
 In order to make this all work, here's what you'll have to do.
@@ -26,12 +25,13 @@ function mainFunction(directory1) {
 				console.log('Processing ' + directory1 + '/' + element);
 			
 				var data = fs.readFileSync( directory1 + '/' + element, encoding="utf8");
-				saveFile(data, element, directory1);
+				data = compressCSS(data, directory1);
+				var saved = saveFile(data, element, directory1);
+				saved ? console.log(element + ' has been saved!') : console.log('There was an error saving ' + element);
 			}
 			//if it is a directory, navigate to it and try again
 			else if (stats.isDirectory() == true) {
 				var directory2 = directory1 + '/' + element;
-				console.log("Changing to directory: " + directory2)
 				mainFunction(directory2);
 			}
 		});
@@ -40,11 +40,9 @@ function mainFunction(directory1) {
 
 //function to save the file when it's formatted
 function saveFile(data, element, directory1) {
-	data = compressCSS(data, directory1);
-
 	fs.writeFileSync(directory1 + '/' + element, data, encoding='utf8');
-	
-	console.log(element + ' has been saved!')
+
+	return true;
 }
 
 /*
@@ -56,43 +54,76 @@ All line breaks are removed
 All @imports are hard coded
 */
 function compressCSS(data1, directory1) {
+		var isImport = data1.indexOf('@');
 
-		for(i=0;i<=data1.length;i++){
+		while(isImport != -1){
 			//analyze imports
-			var isImport = data1.indexOf('@');
 	
-			if (isImport != -1) {
-				var semiColon = data1.indexOf(';') + 1;
-				 	importData = data1.substring(data1.indexOf('@'), semiColon),
-				 	firstQuote = importData.indexOf('"') + 1,
-				 	element = importData.substring(firstQuote, importData.lastIndexOf('"')),
-				 	elementPath = directory1 + '/' + element;
+			var importData = data1.slice(data1.indexOf('@')),
+				semiColon = importData.indexOf(';') + 1,
+				importData = importData.slice(importData.indexOf('@'), semiColon),
+				firstQuote = importData.indexOf('"') + 1,
+				element = importData.slice(firstQuote, importData.lastIndexOf('"')),
+				elementPath = directory1 + '/' + element;
 
-				elementPath = path.normalize(elementPath);
-				console.log('Importing styles from: ' + elementPath);
+			elementPath = path.normalize(elementPath);
+			console.log('Importing styles from: ' + elementPath);
 
-				var data = fs.readFileSync( elementPath, encoding="utf8");
-				//add some recursive goodness here by analyzing the imported file
-				//You will have to intern the above functions into a function of it's own that calls itself.
-				
-				//remove the import string from the file
-				data1 = data1.replace(importData, '');
+			var data = fs.readFileSync( elementPath, encoding="utf8");
+			//add some recursive goodness here by analyzing the imported file
+			//You will have to intern the above functions into a function of it's own that calls itself.
+			
+			//remove the import string from the file
+			data1 = data1.replace(importData, '');
 
-				importedData += data;
-			}
+			data1 += data;
+
+			isImport = data1.indexOf('@');
 		}
 
-	data1 += importedData;
+	//remove all commments
+	var hasComments = data1.indexOf('/*');
 
-	/*for(i=0;i<=data1.length;i++){
-		//remove comments
-		data1 = data1.replace(/\/\*.+?\*\/|\/\/.*(?=[\n\r])/g, '');
-	}*/
+	while(hasComments != -1){
+		var	comment = data1.slice(data1.indexOf('/*')),
+			commentOpen = comment.indexOf('/*'),
+			commentClose = comment.indexOf('*/') + 2,
+			comment = comment.slice(commentOpen, commentClose);
+		data1 = data1.replace(comment, '');
+		comment = '';
+		hasComments = data1.indexOf('/*');
+	}
 	
-	/*for(i=0;i<=data1.length;i++){
+	//remove all line breaks
+	var hasLineBreaks = data1.indexOf('\n');
+	
+	while(hasLineBreaks != -1){
 		//remove linebreaks
-		data1 = data1.replace(/\n/i, ' ');		
-	}*/
+		data1 = data1.replace('\n', ' ');		
+		
+		hasLineBreaks = data1.indexOf('\n');
+	}
+	
+	//remove all carriage returns
+	var hasReturns = data1.indexOf('\r');
+	
+	while(hasReturns != -1){
+		//remove returns
+		data1 = data1.replace('\r', ' ');		
+		
+		hasReturns = data1.indexOf('\r');
+	}
+
+	//remove all tabs
+	var hasTabs = data1.indexOf('\t');
+	
+	while(hasTabs != -1){
+		//remove tabs
+		data1 = data1.replace('\t', '');		
+		
+		hasTabs = data1.indexOf('\r');
+	}
+
 	
 	return data1;
 	
