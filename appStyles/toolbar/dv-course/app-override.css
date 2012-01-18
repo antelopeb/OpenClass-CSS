@@ -234,8 +234,8 @@ padding-top: 8px;
 border-top: 1px solid #ccc;
 font-size: 0.8em;
 color: #555;
-/* Hack to hide UNDEFINED */
-text-indent: -75px;
+/* Hack to hide UNDEFINED - commented out b/c it breaks the view on the panel it's trying to fix 
+text-indent: -75px;*/
 }
 
 
