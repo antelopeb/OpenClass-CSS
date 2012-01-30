@@ -1,0 +1,11 @@
+/* 
+
+This file is to import all the personal home css files into one 
+for collapsing down into production.
+
+To use the overrides in OpenClass, simply call this one file, personalHome.css
+
+*/
+
+@import url("toolbar/inst-override.css");
+@import url("toolbar/ph/app-override.css");

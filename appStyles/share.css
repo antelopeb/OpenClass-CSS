@@ -1,0 +1,10 @@
+/* 
+
+This file is to import all the share css files into one 
+for collapsing down into production.
+
+To use the overrides in OpenClass, simply call this one file, share.css
+
+*/
+
+@import url("toolbar/inst-override.css");

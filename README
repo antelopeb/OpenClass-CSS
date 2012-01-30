@@ -8,7 +8,11 @@ overrides that occur in production you can call the following
 files in the following order:
 
 openclass.css (dojo widget theme)
-appStyles.css (style the application itself)
+appStyles:
+	admin.css (for Whittaker)
+	digitalVellum.css (for Digital Vellum)
+	personalHome.css (for Personal Home)
+	share.css (for share)
 OC_overrides.css (style overrides per institution)
 
 This implementation is dependant on the presence of dojo.css.
