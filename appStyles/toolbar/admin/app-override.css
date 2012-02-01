@@ -101,15 +101,18 @@
 }
 
 /* Modal Window */
-.openclass .dijitDialogUnderlay {
+.dijitDialogUnderlay {
     background: none repeat scroll 0 0 #000000;
     opacity: 0.75;
 }
  
-.openclass .dijitDialog {
+.openclass.dijitDialog {
     background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #D3D3D3;
     padding: 0;
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
 }
 
 .openclass .dijitDialogTitleBar {
@@ -130,7 +133,7 @@
 .basecollege .dijitDialogTitle {
     font-weight: bold;
     text-shadow: none;
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 .openclass .dijitDialogCloseIcon {
@@ -143,17 +146,11 @@
     height: 22px;
 }
 
-.openclass .dijitDialog {
-    border-radius: 5px;
-    -moz-border-radius: 5px; 
-    -webkit-border-radius: 5px;
-}
-
-.openclass .dijitDialog .formRow {
+.openclass.dijitDialog .formRow {
     padding: 0;
 }
 
-.openclass .dijitDialog .formLeft {
+.openclass.dijitDialog .formLeft {
     padding-top: 5px;
 }
 

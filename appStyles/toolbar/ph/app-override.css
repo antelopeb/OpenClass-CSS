@@ -78,12 +78,12 @@ background: none repeat scroll 0 0 #E1DDCD;
 
 /* Modal fixes for create course and edit course */
 /* Modal Window */
-.openclass .dijitDialogUnderlay {
+.dijitDialogUnderlay {
     background: none repeat scroll 0 0 #000000;
     opacity: 0.75;
 }
  
-.openclass .dijitDialog {
+.openclass.dijitDialog {
     background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #D3D3D3;
     padding: 0;

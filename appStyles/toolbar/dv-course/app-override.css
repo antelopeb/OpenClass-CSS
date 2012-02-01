@@ -37,7 +37,7 @@
 }
 
 /* Border color for pop up dialog boxes */
-.ecollege .dijitDialog,
+.ecollege.dijitDialog,
 .ecollege div.popup .inner {
     border-color: #F26522;
 }
@@ -306,11 +306,11 @@ div.popup > div.inner.success > h3 {
 
 /* Prof Author View */
 
-.assessments .dijitDialog .dijitDialogTitle {
+.assessments.dijitDialog .dijitDialogTitle {
     display: block !important;
 }
 
-.assessments .dijitDialog .dijitDialogTitle {
+.assessments.dijitDialog .dijitDialogTitle {
     padding: 5px;
 }
 
@@ -739,7 +739,7 @@ div.popup > div.inner.success > h3 {
     padding: 0 !important;
 }
 
-.ecollege .dijitDialog .dijitDialogTitle {
+.ecollege.dijitDialog .dijitDialogTitle {
     display: none;
 }
 
