@@ -20,3 +20,10 @@ Dojo.css provides it's own reset and rebuild of styles.
 
 Final production files will be compressed and minified to reduce
 http calls.
+
+Making changes:
+If you need to make modifications to the files, you have to follow these restrictions.
+
+Images - If you need to add images, make sure they are in an images folder relative to the css and copy them into the root image folder of your called css file.
+
+Example - you add a sprite to the app-override.css file in admin. You place the image file in _trunk/appStyles/toolbar/admin/images and then place a copy of the image into _trunk/appStyles/images so that when the file is compressed, it still calls from the correct location. This is because you will pull the app-override.css in through _trunk/appStyles/admin.css in production.
