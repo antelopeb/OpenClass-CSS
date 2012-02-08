@@ -110,9 +110,6 @@
     background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #D3D3D3;
     padding: 0;
-    border-radius: 5px;
-    -moz-border-radius: 5px; 
-    -webkit-border-radius: 5px;
 }
 
 .openclass .dijitDialogTitleBar {
@@ -146,12 +143,10 @@
     height: 22px;
 }
 
-.openclass.dijitDialog .formRow {
-    padding: 0;
-}
-
-.openclass.dijitDialog .formLeft {
-    padding-top: 5px;
+.openclass.dijitDialog {
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
 }
 
 .openclass .dijitTabContainerTop-tabs .dijitTabInnerDiv {

@@ -1,6 +1,9 @@
+/* COLORS */
+/**********************************************************************/
+
 /* Toolbar color stripe */
 .ecollege_header_bar {
-	background-color: #e84e0f;
+    background-color: #e84e0f;
 }
 
 /* UNCOMMENT THIS TO INCLUDE A LOGO - The logo should live in toolbar folder
@@ -32,3 +35,548 @@
     text-indent: -9999px;
 }
 */
+
+
+/* Hyperlinks 
+   Note: Anchor color should be the same as Tab Strip Background Color
+         Hover color can be whatever variation makes sense */
+.basecollege a,
+.ecollege a,
+.ecollege .dijitTabChecked .dijitTabInnerDiv .dijitTabContent, 
+.ecollege .dijitTabHover .dijitTabInnerDiv .dijitTabContent,
+.jupiter .cCleftColumn a,
+.jupiter#jupiter .cCleftColumn a,
+.jupiter .cCRightColumn a,
+.jupiter#jupiter .cCRightColumn a {
+    color: #195AA6;
+}
+.basecollege a:hover,
+.ecollege a:hover,
+.jupiter .cCleftColumn a:hover,
+.jupiter#jupiter .cCleftColumn a:hover,
+.jupiter .cCRightColumn a:hover,
+.jupiter#jupiter .cCRightColumn a:hover {
+    color:#e84e0f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STRUCTURAL */
+/**********************************************************************/
+
+/* Toolbar Font Size Fixes - Still wonky in Admin - TEMPORARY */
+.ecollege_header_dialogPopup li a {
+font-size: 1.2em;
+}
+
+/* Share hover font-color */
+#blogContainer .tabNavigation ul li a:hover {
+color: #fff;
+}
+
+#blogContainer .tabNavigation ul.streamDropDown a:hover {
+color: #000;
+}
+
+/* STYLING THE CLARO MODAL WINDOWS */
+
+.dijitDialog {
+border: 10px solid #666;
+-webkit-box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #000;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.dijitDialog .dijitDialogTitleBar {
+background: #ccc;
+color: #000;
+border: none;
+font-weight: bold;
+font-size: 80%;
+}
+
+.dijitDialog .dijitDialogPaneContent {
+border-top: none;
+margin: 0;
+padding: 10px;
+background: white;
+color: black;
+border-top: none;
+}
+
+.dijitDialogUnderlay {
+background: none repeat scroll 0 0 #333;
+opacity: 0.75;
+}
+
+
+.dijitDialogCloseIcon {
+background:url(images/dialogCloseIcon.png);
+background-repeat: no-repeat;
+position: absolute;
+top: 10px;
+right: 5px;
+height: 15px;
+width: 21px;
+}
+
+.dijitDialogCloseIconHover {
+background-position: -21px;
+}
+
+
+
+
+
+
+
+
+/* BEGIN Chat Window Styles */
+
+.chatContainer#chatContainer {
+    margin: 0;
+    padding: 0;
+    background: #EEEEEE;
+    border: 1px solid #BBBBBB;
+    padding: 10px;
+    border-radius: 5px 0 0 0;
+    line-height: 22.4px;
+    /*width: 300px !important;
+    height: 390.45px !important;
+    top: 180.55px !important;*/
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.chatContainer#chatContainer .dijitTab * {
+    vertical-align: middle;
+}
+
+.chatContainer#chatContainer .dijitTab {
+    margin: 0;
+}
+
+
+
+/* main chat container */
+.chatContainer#chatContainer .dijitTabContainerTop {
+    margin-bottom: 10px;
+    background: none repeat scroll 0 0 #transparent;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 0 0 #FFFFFF;
+    /*display: block;
+    overflow: hidden;
+    position: relative;*/
+}
+
+
+
+/* tob tab area */
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top {
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 0 0 0 0;
+    /*height: 31px !important;*/
+}
+
+
+
+/* top tab area buttons */
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabHover,
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabChecked {
+    background-color: #EEEEEE;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top {
+    font-size: 16px;
+    color: #000000;
+    line-height: 22.4px;
+    /*width: 15px !important;
+    height: 30px !important;*/
+    /*right: 0;
+    bottom: 0;
+    left: 283px !important;*/
+    /*z-index: 12;*/
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #999999;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    margin-top: 0;
+    padding: 4px;
+    /*left: 266px;*/
+    /*position: absolute;
+    top: 0;*/
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButtonHover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #999999;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top .dijitTabInnerDiv {
+    -moz-transition-duration: 0.35s;
+    -moz-transition-property: background-color, border;
+    background: none repeat scroll 00 transparent;
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    /*height: 22.4 !important;
+    width: 15px !important;*/
+    padding: 0 !important;
+    /*position: relative;*/
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top .dijitTabInnerDiv .dijitButtonContents {
+    background: none repeat scroll 0 0 none;
+    border: none;
+    /*width: 15px !important;
+    height: 22.4px !important;*/
+    /*top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    padding: 0 !important;
+    /*position: static;*/
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top.dijitTabHover .dijitTabInnerDiv .dijitTabContent,
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top.dijitTabChecked .dijitTabInnerDiv .dijitTabContent {
+    /*border: 1px solid #769DC0 !important;*/
+    background: none repeat scroll 0 0 transparent !important;
+}
+
+/* drop down menu button */
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top .dijitTabInnerDiv .dijitButtonContents .dijitTabStripMenuIcon {
+    background: url("chatImages/buttonArrows.png") no-repeat scroll -50px 50% transparent;
+    height: 15px;
+    margin: 0 auto;
+    width: 15px;
+}
+
+/* scroll left button */
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top .dijitTabInnerDiv .dijitButtonContents .dijitTabStripSlideLeftIcon {
+    background: url("chatImages/buttonArrows.png") no-repeat scroll -75px 50% transparent;
+    height: 15px;
+    margin: 0 auto;
+    width: 15px;
+}
+
+/* scroll right button */
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .tabStripButton-top .dijitTabInnerDiv .dijitButtonContents .dijitTabStripSlideRightIcon {
+    background: url("chatImages/buttonArrows.png") no-repeat scroll -25px 50% transparent;
+    height: 15px;
+    margin: 0 auto;
+    width: 15px;
+}
+
+
+
+/* top tab area tabs */
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper {
+    border-bottom: 0 none;
+    margin: 0;
+    /*height: 31px !important;*/
+    /*left: 17px !important;*/
+    /*position: absolute;
+    top: 0;*/
+    /*width: 249px !important;*/
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs {
+    background: none repeat scroll 0 0 #EEEEEE !important;
+    margin: 0;
+    border: 0;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 0 0 0 0;
+    border-width: 0 !important;
+    border-color: none !important;
+    color: inherit;
+    font-size: 70%;
+    font-weight: bold;
+    margin: 0 1px 0 0;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: none;
+    line-height: 22px;
+    /*height: 32px !important;*/
+    top: 1px !important;
+}
+
+/*.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab:hover, 
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTabChecked {
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 0 0 #FFFFFF;
+}*/
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv {
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #B5BCC7 !important;
+    background: none repeat scroll 0 0 #EEEEEE;
+    box-shadow: none;
+    color: #4A4A4A;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabInnerDiv,
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTabHover .dijitTabInnerDiv {
+    border: 1px solid #769DC0 !important;
+    background-color: #FFFFFF !important;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv .dijitTabContent {
+    border: none;
+    /*background: none repeat scroll 0 0 #EEEEEE;*/
+    padding: 3px 6px !important;
+    /*border-radius: 3px 3px 0 0;*/
+    min-width: 60px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv .dijitTabContent .statusOnline {
+    background-color: #33FF33;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv .dijitTabContent .statusOnline {
+    background-color: #33FF33;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv .dijitTabContent .statusOffline {
+    background-color: #CCCCCC;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv .dijitTabContent .statusPending {
+    background-color: #FCB42D;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv .dijitTabContent .tabLabel {
+    color: #4A4A4A;
+    text-shadow: none;
+    font-size: inherit;
+    padding: 0;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabInnerDiv .dijitTabContent .tabLabel, 
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTabChecked.dijitTabHover .dijitTabInnerDiv .dijitTabContent .tabLabel, 
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTabHover .dijitTabInnerDiv .dijitTabContent .tabLabel, 
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTabActive .dijitTabInnerDiv .dijitTabContent .tabLabel {
+    border-radius: 0;
+    font-size: inherit;
+    padding: 0;
+    background-color: #FFFFFF !important;
+    box-shadow: none;
+    color: #000000 !important;
+    text-shadow: none;
+    top: auto !important;
+}
+
+.chatContainer#chatContainer .dijitTabContainerTop .dijitTabListContainer-top .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabInnerDiv .dijitTabContent .dijitTabCloseButton {
+    background: url("chatImages/tabClose.png") no-repeat scroll 0 0 transparent;
+    height: 14px;
+    margin-left: 5px;
+    margin-right: -5px;
+    width: 14px;
+}
+
+
+
+/* spacer */
+
+.chatContainer#chatContainer .dijitTabContainerBottom-spacer, 
+.chatContainer#chatContainer .dijitTabContainerTop-spacer {
+  display: none;
+  background: none repeat scroll 0 0 transparent;
+  border: none;
+  border-bottom: none;
+  height: 0;
+}
+
+
+
+/* chat content area */
+
+.chatContainer#chatContainer .dijitTabPaneWrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #769DC0 !important;
+    /*height: 327px;
+    left: 0;
+    position: absolute;
+    top: 31px;
+    width: 298px;*/
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child {
+    height: 99% !important;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: none;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .meta {
+    -moz-box-sizing: border-box;
+    clear: both;
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .meta .avatar {
+    float: left;
+    height: 40px;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    width: 40px;
+    padding: 0;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .meta .classmateName {
+    color: #006699;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    overflow: hidden;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .meta .classmateStatus {
+    color: #999999;
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 330px;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .dialogContainer {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    margin-top: 0;
+    max-height: 75%;
+    overflow: auto;
+    padding: 0 4px 4px;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .dialogContainer .dialog {
+    font-size: 80%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .dialogContainer .dialog .classmateChat {
+    color: #006699;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .dialogContainer .dialog .myChat {
+    color: #999999;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .dialogContainer .dialog .systemChat {
+    color: #996600;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .chatWindow .dialogContainer .timestamp {
+    background-image: url("../images/timestamp.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    color: #CCCCCC;
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+
+
+/* chat input and send area */
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .controls .dijitContentPane {
+    padding: 8px;
+}
+
+.chatContainer#chatContainer .dijitTabPaneWrapper .dijitTabContainerTop-child .eCollegeChat .controls .sendContainer {
+    padding-right: 0;
+}
+
+
+
+
+/* chat icon and minimize area */
+
+.chatContainer#chatContainer .dijitButton {
+    float: none !important; 
+}
+
+.chatContainer#chatContainer .dijitButton .dijitButtonNode {
+    background: none;
+    border: none;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none; 
+    box-shadow: none;
+    display: block;
+    text-align: left;
+}
+
+.chatContainer#chatContainer .dijitButton .dijitButtonNode .dijitButtonContents .dijitIcon {
+    height: 16px;
+    width: 16px;
+}
+
+.chatContainer#chatContainer .dijitButton .dijitButtonNode .dijitButtonContents .chatBtnIcon {
+    background: url("chatImages/chatIcon.png") no-repeat scroll 0 0 transparent;
+    padding-right: 4px;
+}
+
+.chatContainer#chatContainer .dijitButton .dijitButtonNode .dijitButtonContents .dijitButtonText {
+    padding: 0;
+    font-size: 12px;
+}
+
+
+/* END Chat Window Styles */
+
+
+
+
+
+/* BEGIN Chat Window Pull Down Menu Styles */
+
+.openclass .dijitPopup {
+-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}

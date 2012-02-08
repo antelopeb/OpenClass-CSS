@@ -1,15 +1,4 @@
-body, td, th   {
-	font: 85% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-input, select {
-	FONT-FAMILY: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-a {
-	color: #1f77b4;TEXT-DECORATION:none;
-} 
-
-a:hover {
-	TEXT-DECORATION:underline;
-}
+ BODY, TD, TH   {font: 85% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;}
+ INPUT, SELECT {FONT-FAMILY: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;}
+ A {color: #1f77b4;TEXT-DECORATION:none;} 
+ A:hover {TEXT-DECORATION:underline;}

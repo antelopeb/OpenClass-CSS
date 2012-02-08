@@ -1,128 +1,124 @@
+/* COLOR */
+/**********************************************************************/
+
 /* APP OVERRIDE - DV Course */
 /* DV Course */
 
-/* Color for main header bar */
-#header {
+/* BACKGROUND COLOR --------- Purple */
+ .assessments .dijitDialogTitleBar,
+.ecollege #navcontainer .moduletitlebar,
+.ecollege #contentcontainer #optionsMenu {
+    background: #e84e0f !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* BACKGROUND COLOR --------- #A09B8A Dark Brown */
+ #header,
+ #courseSettingsMenu {
     background-color: #A09B8A;
+}
+
+/* BORDER COLOR --------- #A09B8A Dark Brown */
+ #header {
     border: 1px solid #A09B8A;
 }
 
-/* Color for type in main header bar */
-#header h1.coursetitle {
-    color: #EFEBDE;
-}
-
-/* Color for settings widget in header bar. Must have enough contrast to show icon. */
-#courseSettingsMenu {
-    background-color: #B8A48B;
-    border-left: 1px solid #525252;
-}
-
-/* Color for left and right modify menus */
-#navcontainer .moduletitlebar,
-#contentcontainer #optionsMenu {
-    background: none;
-    background-color: #e84e0f;
-    border-color: #e84e0f;
-}
-
-/* Color for type in left and right modify menus. Must have enough contrast from background color. */
-#navcontainer .modifymenu a,
-#navcontainer .modifymenu a:link, 
-#navcontainer .modifymenu a:hover,
-#navcontainer .modifymenu a:visited,
+/* FONT COLOR ----------- #FFFFFF */
+ .assessments .slideTab .sortArrow,
+ #header h1#coursetitle,
+ #navcontainer .modifymenu a,
+ #navcontainer .modifymenu a:link, 
+ #navcontainer .modifymenu a:hover,
+ #navcontainer .modifymenu a:visited,
 .ecollege #optionsMenu .dijitDropDownButton .dijitButtonNode .dijitButtonText,
 .ecollege #optionsMenu .dijitDropDownButtonHover .dijitButtonNode .dijitButtonText {
-    color: #EFEBDE;
+    color: #fff;
 }
 
-/* Border color for pop up dialog boxes */
-.ecollege.dijitDialog,
-.ecollege div.popup .inner {
-    border-color: #F26522;
+
+
+/* TAB AREA ------------------------------- */
+
+/* Color for the arrow under the bar housing the pills under Assessment Author */
+ .assessments .slideTab .dangly {
+    border-color: #A09B8A transparent transparent !important;
 }
 
-/* Header bar and text color for pop up dialog boxes. */
-.ecollege .dijitDialogTitleBar,
-.ecollege div.popup .inner h3 {
-    background-color: #e84e0f;
-    color: #fff; /* text color */
-}
-
-/* Color for type in tabs of modify window */
-.ecollege .dijitTabChecked .dijitTabInnerDiv .dijitTabContent, 
-.ecollege .dijitTabHover .dijitTabInnerDiv .dijitTabContent {
-     color: #195AA6;
-     padding: 10px;
-}
-
-/* SOCIAL COURSE HOME */
-/* Social Course Home Tab Strip Background Color */
-.jupiter .cCleftColumn a,
-.jupiter#jupiter .cCleftColumn a,
-.jupiter .cCRightColumn a,
-.jupiter#jupiter .cCRightColumn a {
-    color: #195AA6;
-}
-
-.jupiter .cCleftColumn a:hover,
-.jupiter#jupiter .cCleftColumn a:hover,
-.jupiter .cCRightColumn a:hover,
-.jupiter#jupiter .cCRightColumn a:hover {
-    color: #e84e0f;
-}
-
-.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs, 
-.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs  {
+/* TAB BACKGROUND STRIP */
+ .assessments .slideTab .slideStackController,
+ .jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs, 
+ .jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs  {
     background-color: #A09B8A;
 }
 
-/* Social Course Home Tab Pill On State & Hover State Background color */
-.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTabChecked,
-.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab:hover,
-.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTabChecked,
-.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab:hover {
+
+/* TAB ON/HOVER STATE BACKGROUND */
+ .assessments .slideTab .dijitFocused .dijitButtonText, 
+ .assessments .slideTab .slideStackController .dijitButtonText:hover,
+ .assessments .slideTab .slideStackController .dijitChecked .dijitButtonText,
+ .jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTabChecked,
+ .jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab:hover,
+ .jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTabChecked,
+ .jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab:hover {
     background-color: #575347 !important;
     -webkit-box-shadow: inset 1px 1px 1px #27251e;
     -moz-box-shadow: inset 1px 1px 1px #27251e;
     box-shadow: inset 1px 1px 1px #27251e !important;
 }
 
-/* Social Course Home Selected & Hover Tab Text */
-.jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTabChecked > .dijitTabInnerDiv > .dijitTabContent .tabLabel,
-.jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTab:hover > .dijitTabInnerDiv > .dijitTabContent  .tabLabel,
-.jupiter#jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTabChecked > .dijitTabInnerDiv > .dijitTabContent .tabLabel,
-.jupiter#jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTab:hover > .dijitTabInnerDiv > .dijitTabContent  .tabLabel {
+/* TAB ON/HOVER STATE FONT */
+ .assessments .slideTab .dijitFocused .dijitButtonText, 
+ .assessments .slideTab .slideStackController .dijitButtonText:hover,
+ .assessments .slideTab .slideStackController .dijitChecked .dijitButtonText,
+ .jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTabChecked > .dijitTabInnerDiv > .dijitTabContent .tabLabel,
+ .jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTab:hover > .dijitTabInnerDiv > .dijitTabContent  .tabLabel,
+ .jupiter#jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTabChecked > .dijitTabInnerDiv > .dijitTabContent .tabLabel,
+ .jupiter#jupiter .feedContainerCourse > .dijitTabContainer#listFeedTabs > .dijitTabContainerTop-tabs > .dijitTab:hover > .dijitTabInnerDiv > .dijitTabContent  .tabLabel {
     color: #fff;
     text-shadow: 1px 1px 0px #000000;
 }
 
-/* Social Course Home Unselected Tab Text */
-.jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab > .dijitTabInnerDiv > .dijitTabContent > div > .tabLabel,
-.jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab > .dijitTabInnerDiv > .dijitTabContent > div > .tabLabel,
-.jupiter .feedContainerCourse > .dijitTabContainer .feedFilteringRight > label,
-.jupiter#jupiter .feedContainerCourse > .dijitTabContainer .feedFilteringRight > label {
+
+/* TAB OFF STATE BACKGROUND */
+
+
+
+/* TAB OFF STATE FONT */
+ .assessments .slideTab .slideStackController .dijitButtonText,
+ .jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab > .dijitTabInnerDiv > .dijitTabContent > div > .tabLabel,
+ .jupiter#jupiter .feedContainerCourse > .dijitTabContainer > .dijitTabContainerTop-tabs > .dijitTab > .dijitTabInnerDiv > .dijitTabContent > div > .tabLabel,
+ .jupiter .feedContainerCourse > .dijitTabContainer .feedFilteringRight > label,
+ .jupiter#jupiter .feedContainerCourse > .dijitTabContainer .feedFilteringRight > label {
     color: #fff;
     text-shadow: 1px 1px 0px #000000;
 }
 
 /* Share button on Social Course Home */
-.jupiter .dijitContentPane .makeRemark .dijitButton,
-.jupiter#jupiter .dijitContentPane .makeRemark .dijitButton,
-.jupiter .dijitContentPane .makeRemark .dijitButtonActive,
-.jupiter#jupiter .dijitContentPane .makeRemark .dijitButtonActive,
-.openclass .jupiter .makeRemark .dijitButtonHover .dijitButtonNode, 
-.openclass .jupiter#jupiter .makeRemark .dijitButtonHover .dijitButtonNode {
+ .jupiter .dijitContentPane .makeRemark .dijitButton,
+ .jupiter#jupiter .dijitContentPane .makeRemark .dijitButton,
+ .jupiter .dijitContentPane .makeRemark .dijitButtonActive,
+ .jupiter#jupiter .dijitContentPane .makeRemark .dijitButtonActive,
+.nihilo .jupiter .makeRemark .dijitButtonHover .dijitButtonNode, 
+.nihilo .jupiter#jupiter .makeRemark .dijitButtonHover .dijitButtonNode {
     background: #195AA6;
     border: none;
     color: #fff;
 }
-    
+
 /* Announcements Tab On State */
-.jupiter .skinnyContentBox .dijitTab:hover,
-.jupiter .skinnyContentBox .dijitTabChecked,
-.jupiter#jupiter .skinnyContentBox .dijitTab:hover,
-.jupiter#jupiter .skinnyContentBox .dijitTabChecked {
+ .jupiter .skinnyContentBox .dijitTab:hover,
+ .jupiter .skinnyContentBox .dijitTabChecked,
+ .jupiter#jupiter .skinnyContentBox .dijitTab:hover,
+ .jupiter#jupiter .skinnyContentBox .dijitTabChecked {
     background-color: #0382E5 !important;
     -webkit-box-shadow: inset 1px 1px 1px #3177AD;
     -moz-box-shadow: inset 1px 1px 1px #3177AD;
@@ -130,64 +126,34 @@
 }
 
 /* Secondary Tabs on Profile Page - Typically you don't have to change this color */
-.jupiter .profileContainer > .dijitTabContainer > div > .dijitTabChecked,
-.jupiter .profileContainer > .dijitTabContainer > div > .dijitTab:hover
-.jupiter#jupiter .profileContainer > .dijitTabContainer > div > .dijitTabChecked,
-.jupiter#jupiter .profileContainer > .dijitTabContainer > div > .dijitTab:hover {
+ .jupiter .profileContainer > .dijitTabContainer > div > .dijitTabChecked,
+ .jupiter .profileContainer > .dijitTabContainer > div > .dijitTab:hover
+ .jupiter#jupiter .profileContainer > .dijitTabContainer > div > .dijitTabChecked,
+ .jupiter#jupiter .profileContainer > .dijitTabContainer > div > .dijitTab:hover {
     background: #fff  !important;
     border: 1px solid #ccc !important;
     border-bottom: none !important;
 }
 
 
-/* COLOR STYLES FOR ASSESSMENTS - TEMPORARY */
-/* Color for pills under Assessment Author */
-/* Color for the bar housing the pills under Assessment Author */
-.assessments .slideTab .slideStackController {
-    background-color: #A09B8A !important;
-}
 
-/* Color for the arrow under the bar housing the pills under Assessment Author */
-.assessments .slideTab .dangly {
-    border-color: #A09B8A transparent transparent !important;
-}
 
-.assessments .slideTab .dijitFocused .dijitButtonText, 
-.assessments .slideTab .slideStackController .dijitButtonText:hover,
-.assessments .slideTab .slideStackController .dijitChecked .dijitButtonText {
-    color: #fff !important;
-    text-shadow: 1px 1px 0px #000000 !important;
-	background-color: #575347;
-	-webkit-box-shadow: inset 1px 1px 1px #27251e;
-	-moz-box-shadow: inset 1px 1px 1px #27251e;
-	box-shadow: inset 1px 1px 1px #27251e;
-}
 
-/* Color for close link next to pills under Assessment Author */
-.assessments .slideTab .sortArrow {
-    color: #fff !important;
-}
 
-/* Color for the text of the pills under Assessment Author */
-.assessments .slideTab .slideStackController .dijitButtonText {
-    color: #FFF !important;
-    text-shadow: 1px 1px 0px #000000 !important;  
-}
 
 /* Color for modal windows */
-.assessments .dijitDialogTitleBar {
-    background-color: #e84e0f !important;
-    border-color: #e84e0f !important;
+ .assessments .dijitDialogTitleBar {
+    border-color: #666 !important;
 }
 
-.assessments .editQuestionControls {
-    border-color: #e84e0f !important;
-    border-top: 1px solid #999 !important;
+ .assessments .editQuestionControls {
+    border-color: #333 !important;
+    border-top: 1px solid #666 !important;
 }
 
-.assessments .editQuestionContainer {
-border-left: 1px solid #e84e0f !important;
-border-right: 1px solid #e84e0f !important;
+ .assessments .editQuestionContainer {
+border-left: 1px solid #333 !important;
+border-right: 1px solid #333 !important;
 }
 
 
@@ -195,47 +161,188 @@ border-right: 1px solid #e84e0f !important;
 
 
 
+
+
+/* NEUTRAL COLOR */
+/**********************************************************************/
+
+/* BACKGROUND COLOR --------- #DEDEDE Light Gray */
+.ecollege .dijitDialogTitleBar,
+.ecollege div.popup .inner h3,
+.ecollege .dijitDialogTitleBar {
+    background-color: #DEDEDE;
+}
+
+/* FONT COLOR --------- #000000 */
+.ecollege .dijitDialogTitleBar,
+.ecollege div.popup .inner h3,
+.ecollege .dijitDialogTitleBar {
+    color: #000; /* text color */
+}
+
+/* NEUTRAL BORDERS --------- */
+ #courseSettingsMenu {
+    border-left: 1px solid #666;
+}
+
+.ecollege .dijitDialog,
+.ecollege div.popup .inner {
+    border-color: #DEDEDE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STRUCTURE */
+/**********************************************************************/
+
+/* SOCIAL COURSE HOME */
+
+/* Removes Horizontal Scroll Bars from Right Column */
+.jupiter#jupiter .skinnyContentBox ul li {
+overflow: hidden;
+}
+
+/* SCH - Removes double border on the last Activity Feed Item */
+ .jupiter .dijitContentPane .listFeeds ul li:last-child,
+ .jupiter#jupiter .dijitContentPane .listFeeds ul li:last-child {
+    border-bottom: none;
+}
+
+/* SCH - Removed background gradient from filter drop down */
+.nihilo .dijitSelect .dijitButtonContents {
+background: #fff;
+}
+
+/* SCH - Aligns Showing filter with the other buttons */
+ .jupiter .dijitContentPane .feedFilteringRight,
+ .jupiter#jupiter .dijitContentPane .feedFilteringRight {
+top: -36px;
+}
+
+/* Drop Down */ 
+.ecollege > .dijitPopup > table.dijitMenuTable {
+border: 2px solid #ccc;
+}
+
+ #navcontainer .moduletitlebar,
+ #contentcontainer #optionsMenu {
+    background: none;
+    border: none;
+}
+
+ #navcontainer .moduletitlebar {
+     padding-top: 3px;
+}
+
+/* Color for type in tabs of modify window */
+.ecollege .dijitTabChecked .dijitTabInnerDiv .dijitTabContent, 
+.ecollege .dijitTabHover .dijitTabInnerDiv .dijitTabContent {
+     padding: 10px;
+}
+
+.ecollege .dijitDialogTitleBar,
+.ecollege div.popup .inner h3 {
+    padding: 5px;
+}
+
+.ecollege .dijitDialogTitleBar {
+    padding: 0px;
+}
+
+/* Course Name */
+ #header {
+    margin-bottom: 15px;
+    padding: 0;
+    height: inherit;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+ #header h1#coursetitle {
+    font-size: 90%;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+ #courseSettingsMenu {
+    float: right;
+    height: 35px;
+    width: 30px;
+    overflow: hidden;
+}
+
+ #header #courseSettingsMenu .dijitToggleButton,
+ #header #courseSettingsMenu .dijitButton,
+ #header #courseSettingsMenu .dijitDropDownButton,
+ #header #courseSettingsMenu .dijitComboButton {
+    margin: 0;
+    height: 0;
+    width: 0;
+}
+
+/* SCH Remarks Area */
+ .jupiter .makeRemark textarea,
+ .jupiter#jupiter .makeRemark textarea {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 80%;
+color: #333;
+}
 
 
 /* Override to position the date posted in the activity feed. Line 89 in course home.css */
-.jupiter#jupiter span.feedCourseName {
+ .jupiter#jupiter span.feedCourseName {
 clear: none !important;
 margin: 0 !important;
 }
 
 /* TEMP Social Course Home Announcements Popup Styles */
-.contentPopOut_Announce {
+ .contentPopOut_Announce {
 margin: 0 auto;
 width: 600px;
 }
 
-.contentPopOut_Announce .closePopOut label {
-font-size: 80%;
+ .contentPopOut_Announce .closePopOut label {
+font-size: 90%;
 }
 
-.contentPopOut_Announce .closePopOut #markAsReadCheckbox {
+ .contentPopOut_Announce .closePopOut #markAsReadCheckbox {
 margin: 10px 5px 10px 10px;
 }
 
-.contentPopOut_Announce .dijitDialogPaneContent > h2 {
+ .contentPopOut_Announce .dijitDialogPaneContent > h2 {
 padding: 0 0 10px 0;
 margin: 0;
 }
 
-.contentPopOut_Announce .dijitDialogPaneContent > .announceBody {
+ .contentPopOut_Announce .dijitDialogPaneContent > .announce {
 font-size: 0.9em;
 padding-bottom: 10px;
 overflow: auto;
 height: 320px;
 }
 
-.contentPopOut_Announce .dijitDialogPaneContent > .announceFooter {
+ .contentPopOut_Announce .dijitDialogPaneContent > .announceFooter {
 padding-top: 8px;
 border-top: 1px solid #ccc;
 font-size: 0.8em;
 color: #555;
-/* Hack to hide UNDEFINED - commented out b/c it breaks the view on the panel it's trying to fix 
-text-indent: -75px;*/
+/* Hack to hide UNDEFINED */
+text-indent: -75px;
 }
 
 
@@ -257,75 +364,83 @@ text-indent: -75px;*/
 /* STRUCTURE CHANGES */
 /* Aggregated Prof View */
 
+.assessments .slideTab {
+margin-top: 10px;
+}
+.assessments .dijitStackController .dijit:first-child {
+display: none ;
+}
+
 /* Success and Error Popup on Adding Items */
-div.popup > div.inner.error > h3,
-div.popup > div.inner.success > h3 {
+ div.popup > div.inner.error > h3,
+ div.popup > div.inner.success > h3 {
     padding-top: 5px !important;
     padding-left: 35px !important;
 }
 
 
-.assessments .dijitTitlePane,
+ .assessments .dijitTitlePane,
 .gradebook .dijitTitlePane { 
     position: relative !important;
 } 
 
-.assessments .examSummaryGraph {
+ .assessments .examSummaryGraph {
     border: 1px solid #EEEEEE !important;
     float: left !important;
     margin: 1em !important;
     padding: 0 1em 1em 0 !important;
 }
 
-.assessments .performanceTopLeft p,
-.assessments .performanceTopRight p,
-.assessments .performanceBottomLeft p,
-.assessments .performanceBottomRight p {
+ .assessments .performanceTopLeft p,
+ .assessments .performanceTopRight p,
+ .assessments .performanceBottomLeft p,
+ .assessments .performanceBottomRight p {
     margin-bottom: 0em !important;
     
 }
 
-.assessments .graphParticipantsLabel {
+ .assessments .graphParticipantsLabel {
     margin-top: 25% !important;
     margin-left: 1em !important;
 }
 
-.assessments .examSummaryStats {
+ .assessments .examSummaryStats {
     margin-top: 1em !important;
 }
 
 
-.assessments .questionExplanationNode {
+ .assessments .questionExplanationNode {
     display: none !important;
 }
-.assessments .configArea li, 
-.assessments .scheduleArea li, 
-.assessments .introConfig li {
+ .assessments .configArea li, 
+ .assessments .scheduleArea li, 
+ .assessments .introConfig li {
     margin-left: 1em !important;
 }
 
 /* Prof Author View */
 
-.assessments.dijitDialog .dijitDialogTitle {
+ .assessments .dijitDialog .dijitDialogTitle {
     display: block !important;
 }
 
-.assessments.dijitDialog .dijitDialogTitle {
+ .assessments .dijitDialog .dijitDialogTitle {
     padding: 5px;
 }
 
-.assessments span.questionTypeSelect {
+ .assessments span.questionTypeSelect {
     font-weight: normal;
 }
 
-.assessments .slideTab .slideStackController {
+ .assessments .slideTab .slideStackController {
     padding-top: 0.4em !important;
 }
 
-.assessments .slideTab .slideStackController #assessments_author_slideTab_slideStackController_0_dijit_layout_ContentPane_0 {
+ .assessments .slideTab .slideStackController #assessments_author_slideTab_slideStackController_0_dijit_layout_ContentPane_0 {
     display: none !important;
 }
-.assessments .slideTab .slideStackController .dijitButtonText {
+
+ .assessments .slideTab .slideStackController .dijitButtonText {
     text-shadow: 1px 1px 0px #000000 !important;
     position: relative !important;
     top: -5px !important;
@@ -334,7 +449,8 @@ div.popup > div.inner.success > h3 {
     font-size: 80% !important;
     text-decoration: none !important;
 }
-.assessments .slideTab .slideStackController .dijitButtonText:hover {
+
+ .assessments .slideTab .slideStackController .dijitButtonText:hover {
     border-radius: 15px 15px 15px 15px !important;
     -moz-border-radius:  15px 15px 15px 15px !important;
     -webkit-border-radius:  15px 15px 15px 15px !important; 
@@ -344,18 +460,22 @@ div.popup > div.inner.success > h3 {
     -moz-border-radius:  15px 15px 15px 15px !important;
     -webkit-border-radius:  15px 15px 15px 15px !important;
 }
-.assessments .slideTab .dijitStackContainer {
+
+ .assessments .slideTab .dijitStackContainer {
     border: 0 solid #000000 !important;
     margin-top: -20px !important;
     padding: 0 !important !important;
 }
-.assessments .slideTab .dijitStackController {
+
+ .assessments .slideTab .dijitStackController {
     margin-left: 1em !important;
 }
-.assessments .slideTab .dijitStackController .dijitToggleButton {
+
+ .assessments .slideTab .dijitStackController .dijitToggleButton {
     margin-bottom: 0em !important;
 }
-.assessments .slideTab .dangly {
+
+ .assessments .slideTab .dangly {
     border-style: solid !important;
     border-width: 10px !important;
     height: 0 !important;
@@ -363,7 +483,8 @@ div.popup > div.inner.success > h3 {
     width: 0 !important;
     z-index: 10 !important;
 }
-.assessments .slideTab .sortArrow {
+
+ .assessments .slideTab .sortArrow {
     cursor: pointer !important;
     float: right !important;
     margin: .5em 2em .3em .3em !important;
@@ -662,52 +783,56 @@ div.popup > div.inner.success > h3 {
 /* Grade By Assignment - Details View */
 
 .gradebook .dijitToolbar {
-	background: none repeat scroll 0 0 #EFEFEF;
-	border: 1px solid #CCCCCC;
-	border-radius: 5px 5px 0 0 !important;
-	margin: 0 !important;
-	padding: 3px;
+    background: none repeat scroll 0 0 #EFEFEF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 0 0 !important;
+    margin: 0 !important;
+    padding: 3px;
 }
 
 .gradebook .dijitEditorIFrameContainer {
-	border-bottom: 1px solid #CCCCCC;
-	border-left: 1px solid #CCCCCC;
-	border-radius: 0 0 5px 5px;
-	border-right: 1px solid #CCCCCC;
-	height: 8em;
-	margin: 0;
-	overflow: auto;
-	padding: 0 0 0 10px;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid #CCCCCC;
+    height: 8em;
+    margin: 0;
+    overflow: auto;
+    padding: 0 0 0 10px;
 }
 
 .gradebook .dijitEditorIFrame {
-	height: 100% !important;
+    height: 100% !important;
 }
 
 .gradebook .dijitTitlePaneContentInner .buttons-container {
-	border: none !important;
-	padding: 0 !important;
+    border: none !important;
+    padding: 0 !important;
 }
 
 /* LIGHTBOX ADD PAGE */
 /* STRUCTURE CHANGES */
 /* ----------------- */
 
-#pageTypeSelect td.dijitButtonContents {
+.ecollege .dijitDialog .dijitDialogPaneContent {
+border-top: none;
+}
+
+ #pageTypeSelect td.dijitButtonContents {
     width: 200px;
 }
 
-.addPageDropDown {
+ .addPageDropDown {
     width: 200px !important;
 }
 
-.addPageDropDown {
+ .addPageDropDown {
     clear: none !important;
     float: left;
     width: 200px;
 }
 
-.addPageLabel {
+ .addPageLabel {
     float: left;
     font-weight: bold;
     font-size: 90%;
@@ -727,19 +852,15 @@ div.popup > div.inner.success > h3 {
     width: 300px;
 }
 
-.formline {;
-    margin: 13px 0 0;
+ .formline {;
+    margin: 5px 0 0 0;
 }
 
-.dijitInputInner {
+ .dijitInputInner {
     padding-left: 5px !important;
 }
 
-.ecollege .dijitDialogTitleBar, .ecollege div.popup .inner h3 {
-    padding: 0 !important;
-}
-
-.ecollege.dijitDialog .dijitDialogTitle {
+.ecollege .dijitDialog .dijitDialogTitle {
     display: none;
 }
 
@@ -775,6 +896,13 @@ div.popup > div.inner.success > h3 {
 .ecollege .dijitTabHover .dijitTabContent,
 .ecollege .dijitTabContent {
     padding: 15px 5px 0 5px !important;
+}
+
+.ecollege #gbAuthorToolsTabContainer .dijitTabCheckedHover .dijitTabContent,
+.ecollege #gbAuthorToolsTabContainer .dijitTabChecked .dijitTabContent,
+.ecollege #gbAuthorToolsTabContainer .dijitTabHover .dijitTabContent,
+.ecollege #gbAuthorToolsTabContainer .dijitTabContent {
+    padding: 12px 5px 5px 3px !important;
 }
 
 .ecollege .dijitTab .tabLabel {

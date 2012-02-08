@@ -1,3 +1,6 @@
+/* COLOR */
+/**********************************************************************/
+
 /* APP OVERRIDE - DASHBOARD */
 /* Dashboard */
 
@@ -31,49 +34,80 @@
     text-shadow: 1px 1px 0px #000000;
 }
 
-/* Tab Strip Tab Color
+/* Tab Strip Tab Color (Selected Tab)
    Note: The tab color should be a variation of the Tab Strip Background Color
          This applies only to a selected or hovered tab color. An unselected tab is 'transparent' */
 .basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab:hover,
 .basecollege #listFeedTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTabChecked,
 .basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTab:hover,
 .basecollege #profileTabs > .dijitTabListContainer-top > .dijitTabListWrapper > .dijitTabContainerTop-tabs > .dijitTabChecked {
-	background-color: #575347;
-	-webkit-box-shadow: inset 1px 1px 1px #27251e;
-	-moz-box-shadow: inset 1px 1px 1px #27251e;
-	box-shadow: inset 1px 1px 1px #27251e;
+  color: #ffffff;
+  background-color: #575347;
+  -webkit-box-shadow: inset 1px 1px 1px #27251e;
+  -moz-box-shadow: inset 1px 1px 1px #27251e;
+  box-shadow: inset 1px 1px 1px #27251e;
 }
 
-/* Profile Editor Upload Button Background and Text Color
-   Note: Background color should be same as Tab Strip Background Color
-         Text color should be same as Tab Strip Tab Text Color (Unselected Tab) */
-.basecollege .formButton {
-    background-color: #195AA6;
-    color: #ffffff;
-}
-
-/* Profile Editor Submit Button Background and Text Color
-   Note: Should resemble a lighter variation on the Profile Editor Upload Button colors */
-.basecollege .submitBttn {
-    background-color: #D7E8F7;
-    border-color: #CCDBE8;
-    color: #666;
-}
-
-/* Hyperlinks 
-   Note: Anchor color should be the same as Tab Strip Background Color
-         Hover color can be whatever variation makes sense */
-.basecollege a {
-    color: #195AA6;
-}
-.basecollege a:hover {
-    color:#e84e0f;
-}
 
 /* People Search Background
     Note: This should be a lighter color of the main tab stripe */
-.feedFilteringContainer {
+.basecollege div.feedFilteringContainer {
 background: none repeat scroll 0 0 #E1DDCD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STRUCTURE */
+/**********************************************************************/
+
+/* PROFILE */
+.basecollege .profileEdit {
+  font-size: 110%;
+}
+
+.basecollege .profileEdit .dijitTextArea[cols] {
+  width: 500px;
+}
+
+.basecollege .profileEditContainer .formButton,
+.basecollege .barSubmit .submitBttn {
+background-color: #195AA6 !important;
+color: #fff;
+border: none;
+min-width: 90px;
+}
+
+.basecollege .profileAboutMe .sectionLeft table td {
+padding: 5px;
+background: #fff;
+border: 1px solid #ddd; 
+}
+
+.basecollege .dijitMenu {
+border: 1px solid #ccc;
+font-size: 90%;
+padding: 0 4px;  
+}
+
+.basecollege .profileAboutMe .sectionLeft .formRow .dijitInline {
+margin-top: 5px;
+font-size: 16px;
+}
+
+/* Activity Feed Clear Floats Height Change */
+.basecollege .activityFeedWidgetWrapper .clearAllFloats {
+  height: 0px;
 }
 
 /* Modal fixes for create course and edit course */
