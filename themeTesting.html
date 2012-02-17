@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OpenClass | Dojo Theme Testing Page</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<!-- bring in openclass theme and dojo.css -->
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/resources/dojo.css" />
+	<link rel="stylesheet" type="text/css" href="openclass/openclass.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dojo.xd.js" type="text/javascript" data-dojo-config="parseOnLoad: true"></script> 
+	<script>
+		dojo.require("dijit.layout.TabContainer");
+		dojo.require("dijit.layout.ContentPane");
+		dojo.require("dijit.form.Button");
+		dojo.require("dijit.form.ComboButton");
+		dojo.require("dijit.Menu");
+		dojo.require("dijit.MenuItem");
+	</script>
+	<style>
+		body {
+			padding: 30px;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: absolute;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		.mainWrapper {
+			width: 100%; 
+			height: 100%; 
+			min-height: 1em; 
+			min-width: 1em; 
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<!-- begin the container for the widgets -->
+	<div class="openclass mainWrapper">
+		<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 100%;">
+			<div dojoType="dijit.layout.ContentPane" title="Buttons and Form Widgets">
+				<button dojoType="dijit.form.Button" type="button">Standard Button</button>
+				<br />
+				<button dojoType="dijit.form.ToggleButton" iconClass='dijitCheckBoxIcon' checked="true">Toggle Button</button>
+				<br />
+				<div dojoType="dijit.form.ComboButton">
+					<span>Combo Button</span>
+					<div dojoType="dijit.Menu">
+						<div dojoType="dijit.MenuItem">Option 1</div>
+						<div dojoType="dijit.MenuItem">Option 2</div>
+						<div dojoType="dijit.MenuItem">Option 3</div>
+					</div>
+				</div>
+			</div>
+			<div dojoType="dijit.layout.ContentPane" title="Text Field Widgets">
+			</div>			
+			<div dojoType="dijit.layout.ContentPane" title="Layout Widgets">
+			</div>
+			<div dojoType="dijit.layout.ContentPane" title="Form Widgets">
+			</div>
+		</div>
+	</div>
+	<!-- end the container for the widgets -->
+
+</body>
+</html>
